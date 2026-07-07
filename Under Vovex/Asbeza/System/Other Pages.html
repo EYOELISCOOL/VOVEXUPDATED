@@ -1,0 +1,1662 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+    <!-- Other meta tags -->
+    
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'GA_MEASUREMENT_ID');
+    </script>
+</head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delivery Driver Registration | Asbeza365</title>
+    <link rel="icon" href="./Image/icon.ico" type="image/x-icon">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Local Ethiopic Font -->
+    <style>
+        @font-face {
+            font-family: 'Abyssinica SIL';
+            src: url('/fonts/AbyssinicaSIL-Regular.ttf') format('truetype');
+        }
+    </style>
+    <link rel="icon" href="./icon.ico" type="image/x-icon">
+
+    <style>
+        /* CSS Variables */
+        :root {
+            --primary: #056D30;
+            --primary-light: #E8F5E9;
+            --primary-dark: #034D21;
+            --secondary: #F0B429;
+            --secondary-light: #FFF8E1;
+            --secondary-dark: #F57F17;
+            --error: #C12A2A;
+            --success: #2E7D32;
+            --text-primary: #212121;
+            --text-secondary: #757575;
+            --background: #FFFFFF;
+            --background-light: #FAFAFA;
+            --background-dark: #F5F5F5;
+            --shadow-sm: 0 1px 3px rgba(0,0,0,0.12);
+            --shadow-md: 0 4px 6px rgba(0,0,0,0.1);
+            --shadow-lg: 0 10px 20px rgba(0,0,0,0.1);
+            --shadow-xl: 0 20px 40px rgba(0,0,0,0.15);
+            --border-radius-sm: 4px;
+            --border-radius-md: 8px;
+            --border-radius-lg: 12px;
+            --border-radius-xl: 16px;
+            --border-radius-2xl: 24px;
+            --spacing-xs: 4px;
+            --spacing-sm: 8px;
+            --spacing-md: 16px;
+            --spacing-lg: 24px;
+            --spacing-xl: 32px;
+            --spacing-2xl: 48px;
+            --spacing-3xl: 64px;
+        }
+
+        /* Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html[dir="rtl"] {
+            font-family: 'Abyssinica SIL', serif;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            color: var(--text-primary);
+            background-color: var(--background-light);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        button {
+            cursor: pointer;
+            border: none;
+            background: none;
+            font-family: inherit;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Animation */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideUp {
+            from { 
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to { 
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Utility Classes */
+        .container {
+            width: 100%;
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 var(--spacing-xl);
+        }
+
+        .section {
+            padding: var(--spacing-3xl) 0;
+        }
+
+        .section-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: var(--spacing-2xl);
+            color: var(--primary);
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 80px;
+            height: 4px;
+            background: var(--secondary);
+            margin: var(--spacing-md) auto 0;
+            border-radius: 2px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: var(--spacing-sm) var(--spacing-lg);
+            border-radius: var(--border-radius-md);
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .btn-primary {
+            background-color: var(--primary);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background-color: var(--primary-dark);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .btn-secondary {
+            background-color: var(--secondary);
+            color: var(--text-primary);
+        }
+
+        .btn-secondary:hover {
+            background-color: var(--secondary-dark);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .fade-in {
+            animation: fadeIn 0.8s ease forwards;
+        }
+
+        .slide-up {
+            animation: slideUp 0.8s ease forwards;
+        }
+
+        /* Header Styles */
+        header {
+            background-color: var(--primary);
+            color: white;
+            padding: var(--spacing-md) 0;
+            box-shadow: var(--shadow-md);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            transition: all 0.3s ease;
+        }
+
+        header.scrolled {
+            padding: var(--spacing-sm) 0;
+            background-color: rgba(5, 109, 48, 0.95);
+            backdrop-filter: blur(10px);
+        }
+
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-sm);
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: white;
+        }
+
+        .logo-icon {
+            font-size: 2rem;
+            color: var(--secondary);
+        }
+
+        .logo-text {
+            font-family: 'Playfair Display', serif;
+        }
+
+        .nav-items {
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-xl);
+        }
+
+        .nav-item {
+            color: white;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            position: relative;
+            padding: var(--spacing-sm) 0;
+        }
+
+        .nav-item::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: var(--secondary);
+            transition: width 0.3s ease;
+        }
+
+        .nav-item:hover::after {
+            width: 100%;
+        }
+
+        .nav-item:hover {
+            color: var(--secondary-light);
+        }
+
+        .header-right {
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-lg);
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            color: white;
+            font-size: 1.5rem;
+            z-index: 1001;
+        }
+
+        /* Language Switcher */
+        .language-switcher {
+            position: relative;
+        }
+
+        .language-btn {
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-xs);
+            color: white;
+            background: rgba(255, 255, 255, 0.1);
+            padding: var(--spacing-xs) var(--spacing-sm);
+            border-radius: var(--border-radius-sm);
+            transition: all 0.3s ease;
+        }
+
+        .language-btn:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        .language-dropdown {
+            position: absolute;
+            top: 100%;
+            right: 0;
+            background: white;
+            border-radius: var(--border-radius-md);
+            box-shadow: var(--shadow-lg);
+            padding: var(--spacing-sm);
+            min-width: 150px;
+            display: none;
+            z-index: 100;
+            animation: fadeIn 0.3s ease;
+        }
+
+        .language-switcher:hover .language-dropdown {
+            display: block;
+        }
+
+        .language-option {
+            padding: var(--spacing-sm) var(--spacing-md);
+            border-radius: var(--border-radius-sm);
+            cursor: pointer;
+            color: var(--text-primary);
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-sm);
+            transition: all 0.2s ease;
+        }
+
+        .language-option:hover {
+            background: var(--primary-light);
+            color: var(--primary);
+        }
+
+        /* Registration Form Styles */
+        .registration-container {
+            max-width: 900px;
+            margin: var(--spacing-3xl) auto;
+            background: white;
+            border-radius: var(--border-radius-xl);
+            box-shadow: var(--shadow-lg);
+            overflow: hidden;
+        }
+
+        .registration-header {
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            color: white;
+            padding: var(--spacing-xl);
+            text-align: center;
+        }
+
+        .registration-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+            margin-bottom: var(--spacing-sm);
+        }
+
+        .registration-subtitle {
+            opacity: 0.9;
+        }
+
+        .registration-form {
+            padding: var(--spacing-2xl);
+        }
+
+        .form-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: var(--spacing-lg);
+            margin-bottom: var(--spacing-lg);
+        }
+
+        .form-group {
+            margin-bottom: var(--spacing-md);
+        }
+
+        .form-group.full-width {
+            grid-column: span 2;
+        }
+
+        .form-label {
+            display: block;
+            margin-bottom: var(--spacing-xs);
+            font-weight: 500;
+            color: var(--text-primary);
+        }
+
+        .form-label.required::after {
+            content: '*';
+            color: var(--error);
+            margin-left: var(--spacing-xs);
+        }
+
+        .form-control {
+            width: 100%;
+            padding: var(--spacing-md);
+            border: 1px solid var(--background-dark);
+            border-radius: var(--border-radius-md);
+            font-family: inherit;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+        }
+
+        .form-control:focus {
+            outline: none;
+            border-color: var(--primary);
+            box-shadow: 0 0 0 3px rgba(5, 109, 48, 0.1);
+        }
+
+        .form-select {
+            appearance: none;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%23757575' viewBox='0 0 16 16'%3E%3Cpath d='M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z'/%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: right var(--spacing-md) center;
+            background-size: 16px 12px;
+        }
+
+        .form-textarea {
+            min-height: 120px;
+            resize: vertical;
+        }
+
+        .form-check {
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-sm);
+            margin-bottom: var(--spacing-sm);
+        }
+
+        .form-check-input {
+            width: 18px;
+            height: 18px;
+            accent-color: var(--primary);
+        }
+
+        .form-check-label {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+        }
+
+        .form-check-label a {
+            color: var(--primary);
+            text-decoration: underline;
+        }
+
+        .file-upload {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: var(--spacing-xl);
+            border: 2px dashed var(--background-dark);
+            border-radius: var(--border-radius-md);
+            background-color: var(--background-light);
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .file-upload:hover {
+            border-color: var(--primary);
+            background-color: var(--primary-light);
+        }
+
+        .file-upload-icon {
+            font-size: 2rem;
+            color: var(--primary);
+            margin-bottom: var(--spacing-sm);
+        }
+
+        .file-upload-text {
+            text-align: center;
+            margin-bottom: var(--spacing-xs);
+        }
+
+        .file-upload-hint {
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+        }
+
+        .file-upload-input {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            cursor: pointer;
+        }
+
+        .file-preview {
+            display: flex;
+            flex-wrap: wrap;
+            gap: var(--spacing-sm);
+            margin-top: var(--spacing-md);
+        }
+
+        .file-preview-item {
+            position: relative;
+            width: 100px;
+            height: 100px;
+            border-radius: var(--border-radius-sm);
+            overflow: hidden;
+            border: 1px solid var(--background-dark);
+        }
+
+        .file-preview-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .file-preview-remove {
+            position: absolute;
+            top: 4px;
+            right: 4px;
+            width: 20px;
+            height: 20px;
+            background-color: var(--error);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.7rem;
+            cursor: pointer;
+        }
+
+        .form-actions {
+            display: flex;
+            justify-content: center;
+            margin-top: var(--spacing-xl);
+        }
+
+        .btn-submit {
+            padding: var(--spacing-md) var(--spacing-2xl);
+            font-size: 1.1rem;
+            background-color: var(--primary);
+            color: white;
+            border-radius: var(--border-radius-lg);
+            transition: all 0.3s ease;
+        }
+
+        .btn-submit:hover {
+            background-color: var(--primary-dark);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .form-message {
+            padding: var(--spacing-md);
+            border-radius: var(--border-radius-md);
+            margin-bottom: var(--spacing-lg);
+            text-align: center;
+            display: none;
+        }
+
+        .form-message.success {
+            background-color: var(--primary-light);
+            color: var(--success);
+            border: 1px solid var(--success);
+            display: block;
+        }
+
+        .form-message.error {
+            background-color: #FFEBEE;
+            color: var(--error);
+            border: 1px solid var(--error);
+            display: block;
+        }
+
+        /* Verification Banner */
+        .verification-banner {
+            background-color: var(--secondary-light);
+            padding: var(--spacing-md);
+            border-radius: var(--border-radius-md);
+            margin-bottom: var(--spacing-lg);
+            border-left: 4px solid var(--secondary);
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-md);
+        }
+
+        .verification-icon {
+            font-size: 1.5rem;
+            color: var(--secondary-dark);
+        }
+
+        .verification-text {
+            flex: 1;
+        }
+
+        .verification-text strong {
+            color: var(--primary-dark);
+        }
+
+        /* Mobile Menu */
+        .mobile-menu {
+            position: fixed;
+            top: 0;
+            right: -100%;
+            width: 300px;
+            height: 100vh;
+            background: white;
+            box-shadow: var(--shadow-xl);
+            z-index: 1000;
+            transition: all 0.3s ease;
+            padding: var(--spacing-2xl) var(--spacing-lg);
+            overflow-y: auto;
+        }
+
+        .mobile-menu.open {
+            right: 0;
+        }
+
+        .mobile-menu-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: var(--spacing-xl);
+        }
+
+        .close-menu {
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            color: var(--text-secondary);
+        }
+
+        .mobile-nav-items {
+            display: flex;
+            flex-direction: column;
+            gap: var(--spacing-md);
+        }
+
+        .mobile-nav-item {
+            padding: var(--spacing-sm) 0;
+            border-bottom: 1px solid var(--background-dark);
+            color: var(--text-primary);
+            font-weight: 500;
+        }
+
+        .mobile-menu-footer {
+            margin-top: var(--spacing-xl);
+            padding-top: var(--spacing-xl);
+            border-top: 1px solid var(--background-dark);
+        }
+
+        /* Overlay */
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 999;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .overlay.active {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 992px) {
+            .section-title {
+                font-size: 2.2rem;
+            }
+            
+            .registration-title {
+                font-size: 1.8rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .nav-items {
+                display: none;
+            }
+            
+            .mobile-menu-btn {
+                display: block;
+            }
+            
+            .form-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .form-group.full-width {
+                grid-column: span 1;
+            }
+            
+            .registration-form {
+                padding: var(--spacing-xl);
+            }
+        }
+
+        @media (max-width: 576px) {
+            .section {
+                padding: var(--spacing-2xl) 0;
+            }
+            
+            .section-title {
+                font-size: 1.8rem;
+            }
+            
+            .container {
+                padding: 0 var(--spacing-md);
+            }
+            
+            .logo-text {
+                display: none;
+            }
+            
+            .registration-header {
+                padding: var(--spacing-lg);
+            }
+            
+            .registration-title {
+                font-size: 1.5rem;
+            }
+        }
+        
+        /* Footer */
+        footer {
+            background-color: var(--primary-dark);
+            color: white;
+            padding: var(--spacing-3xl) 0 0;
+        }
+
+        .footer-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: var(--spacing-2xl);
+            margin-bottom: var(--spacing-2xl);
+        }
+
+        .footer-column h3 {
+            font-size: 1.3rem;
+            margin-bottom: var(--spacing-lg);
+            position: relative;
+            display: inline-block;
+        }
+
+        .footer-column h3::after {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            left: 0;
+            width: 50px;
+            height: 3px;
+            background: var(--secondary);
+        }
+
+        .footer-links {
+            list-style: none;
+        }
+
+        .footer-link {
+            margin-bottom: var(--spacing-sm);
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-sm);
+        }
+
+        .footer-link i {
+            width: 20px;
+            text-align: center;
+        }
+
+        .footer-link:hover {
+            color: var(--secondary);
+            transform: translateX(5px);
+        }
+
+        .footer-about p {
+            margin-bottom: var(--spacing-md);
+            opacity: 0.8;
+        }
+
+        .social-links {
+            display: flex;
+            gap: var(--spacing-md);
+            margin-top: var(--spacing-lg);
+        }
+
+        .social-link {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+        }
+
+        .social-link:hover {
+            background: var(--secondary);
+            color: var(--text-primary);
+            transform: translateY(-3px);
+        }
+
+        .footer-bottom {
+            background-color: rgba(0, 0, 0, 0.2);
+            padding: var(--spacing-md) 0;
+            text-align: center;
+        }
+
+        .copyright {
+            opacity: 0.7;
+            font-size: 0.9rem;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header id="header">
+ <div class="container header-container">
+            <a href="index.html" class="logo">
+                
+                
+                  <img 
+            src="./Icon365.PNG" 
+            alt="አስቤዛ 365 Logo" 
+            class="logo-icon" 
+            width="100" 
+            height="80"
+        >
+            </a>
+            
+            <nav class="nav-items">
+                <a href="../index.html" class="nav-item">Home</a>
+                <a href="../System/Shops.html" class="nav-item">Shops</a>
+                <a href="../System/About.html" class="nav-item">About</a>
+                <a href="../System/Contacts.html" class="nav-item">Contact</a>
+                <a href="../System/Other Pages.html" class="nav-item active">Become a Delivery Man/Woman</a>
+            </nav>
+            
+            <div class="header-right">
+                <div class="language-switcher">
+                    <button class="language-btn">
+                        <span class="language-flag">🇬🇧</span>
+                        <span>EN</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="language-dropdown">
+                        <div class="language-option" data-lang="en">🇬🇧 English</div>
+                        <div class="language-option" data-lang="am">🇪🇹 አማርኛ</div>
+                        <div class="language-option" data-lang="om">🇪🇹 Afaan Oromoo</div>
+                        <div class="language-option" data-lang="ti">🇪🇹 ትግርኛ</div>
+                    </div>
+                </div>
+                
+               
+                
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-header">
+            <div class="logo">
+                <span class="logo-icon">🛒</span>
+                <span class="logo-text">Asbeza365</span>
+            </div>
+            <button class="close-menu" id="closeMenu">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        
+        <nav class="mobile-nav-items">
+            <a href="../index.html" class="mobile-nav-item">Home</a>
+            <a href="../System/Shops.html" class="mobile-nav-item">Shops</a>
+            <a href="../System/Products.html" class="mobile-nav-item">Products</a>
+            <a href="deals.html" class="mobile-nav-item">Deals</a>
+            <a href="../System/About.html" class="mobile-nav-item">About</a>
+            <a href="contact.html" class="mobile-nav-item">Contact</a>
+            <a href="../System/Other Pages.html" class="mobile-nav-item active">Become a Delivery Man/Woman</a>
+        </nav>
+        
+        <div class="mobile-menu-footer">
+            <div class="language-switcher">
+                <button class="language-btn" style="width: 100%; justify-content: center;">
+                    <span class="language-flag">🇬🇧</span>
+                    <span>English</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="language-dropdown" style="position: relative; top: 0; right: auto; width: 100%; margin-top: var(--spacing-sm);">
+                    <div class="language-option" data-lang="en">🇬🇧 English</div>
+                    <div class="language-option" data-lang="am">🇪🇹 አማርኛ</div>
+                    <div class="language-option" data-lang="om">🇪🇹 Afaan Oromoo</div>
+                    <div class="language-option" data-lang="ti">🇪🇹 ትግርኛ</div>
+                </div>
+            </div>
+            <a href="../System/Login.html" class="btn btn-primary" style="width: 100%; margin-top: var(--spacing-lg);">
+                Login / Register
+            </a>
+        </div>
+    </div>
+
+    <div class="overlay" id="overlay"></div>
+
+    <!-- Registration Section -->
+    <main class="section">
+        <div class="container">
+            <div class="registration-container">
+                <div class="registration-header">
+                    <h1 class="registration-title">Become a Delivery Driver</h1>
+                    <p class="registration-subtitle">Join Asbeza365's delivery network and earn money on your own schedule</p>
+                </div>
+                
+                <div class="verification-banner">
+                    <i class="fas fa-shield-alt verification-icon"></i>
+                    <div class="verification-text">
+                        <strong>Verification Required:</strong> All drivers must complete identity verification and background check to ensure safety and security for our customers.
+                    </div>
+                </div>
+                
+                <form id="deliveryRegistrationForm" class="registration-form">
+                    <div id="formMessage" class="form-message"></div>
+                    
+                    <h2 class="section-title" style="font-size: 1.8rem; text-align: left; margin-bottom: var(--spacing-lg);">Personal Information</h2>
+                    
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="firstName" class="form-label required">First Name</label>
+                            <input type="text" id="firstName" name="firstName" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="lastName" class="form-label required">Last Name</label>
+                            <input type="text" id="lastName" name="lastName" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email" class="form-label required">Email Address</label>
+                            <input type="email" id="email" name="email" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone" class="form-label required">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="dob" class="form-label required">Date of Birth</label>
+                            <input type="date" id="dob" name="dob" class="form-control" required>
+                            <small class="form-text">You must be at least 18 years old</small>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="gender" class="form-label required">Gender</label>
+                            <select id="gender" name="gender" class="form-control form-select" required>
+                                <option value="">Select Gender</option>
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <h2 class="section-title" style="font-size: 1.8rem; text-align: left; margin-bottom: var(--spacing-lg);">Address Information</h2>
+                    
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="subcity" class="form-label required">Subcity</label>
+                            <select id="subcity" name="subcity" class="form-control form-select" required>
+                                <option value="">Select Subcity</option>
+                                <option value="Addis Ketema">Addis Ketema</option>
+                                <option value="Akaki-Kaliti">Akaki-Kaliti</option>
+                                <option value="Arada">Arada</option>
+                                <option value="Bole">Bole</option>
+                                <option value="Gullele">Gullele</option>
+                                <option value="Kirkos">Kirkos</option>
+                                <option value="Kolfe Keranio">Kolfe Keranio</option>
+                                <option value="Lideta">Lideta</option>
+                                <option value="Nifas Silk-Lafto">Nifas Silk-Lafto</option>
+                                <option value="Yeka">Yeka</option>
+                                <option value="Lemi-Kura">Lemi-Kura</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="woreda" class="form-label required">Woreda</label>
+                            <input type="text" id="woreda" name="woreda" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-group full-width">
+                            <label for="address" class="form-label required">Full Address</label>
+                            <textarea id="address" name="address" class="form-control" required></textarea>
+                        </div>
+                    </div>
+                    
+                    <h2 class="section-title" style="font-size: 1.8rem; text-align: left; margin-bottom: var(--spacing-lg);">Identification & Documents</h2>
+                    
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="idType" class="form-label required">ID Type</label>
+                            <select id="idType" name="idType" class="form-control form-select" required>
+                                <option value="">Select ID Type</option>
+                                <option value="ethiopian-id">Ethiopian National ID</option>
+                                <option value="passport">Passport</option>
+                                <option value="driving-license">Driving License</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="idNumber" class="form-label required">ID Number</label>
+                            <input type="text" id="idNumber" name="idNumber" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-group full-width">
+                            <label class="form-label required">Upload ID Document (Front)</label>
+                            <div class="file-upload" id="idFrontUpload">
+                                <i class="fas fa-id-card file-upload-icon"></i>
+                                <div class="file-upload-text">Click to upload or drag and drop</div>
+                                <div class="file-upload-hint">JPG, PNG or PDF (max. 5MB)</div>
+                                <input type="file" id="idFront" name="idFront" class="file-upload-input" accept="image/*,.pdf" required>
+                            </div>
+                            <div class="file-preview" id="idFrontPreview"></div>
+                        </div>
+                        
+                        <div class="form-group full-width">
+                            <label class="form-label required">Upload ID Document (Back)</label>
+                            <div class="file-upload" id="idBackUpload">
+                                <i class="fas fa-id-card file-upload-icon"></i>
+                                <div class="file-upload-text">Click to upload or drag and drop</div>
+                                <div class="file-upload-hint">JPG, PNG or PDF (max. 5MB)</div>
+                                <input type="file" id="idBack" name="idBack" class="file-upload-input" accept="image/*,.pdf" required>
+                            </div>
+                            <div class="file-preview" id="idBackPreview"></div>
+                        </div>
+                        
+                        <div class="form-group full-width">
+                            <label class="form-label required">Upload Recent Photo</label>
+                            <h6>*Warning* Photograph must be clear and must show two ears at the same time.(Exception Available for Religional Purposes.)</h6>
+                            <div class="file-upload" id="photoUpload">
+                                <i class="fas fa-camera file-upload-icon"></i>
+                                <div class="file-upload-text">Click to upload or drag and drop</div>
+                                <div class="file-upload-hint">JPG or PNG (max. 5MB)</div>
+                                <input type="file" id="photo" name="photo" class="file-upload-input" accept="image/*" required>
+                            </div>
+                            <div class="file-preview" id="photoPreview"></div>
+                        </div>
+                    </div>
+                    
+                    <h2 class="section-title" style="font-size: 1.8rem; text-align: left; margin-bottom: var(--spacing-lg);">Vehicle Information</h2>
+                    
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="vehicleType" class="form-label required">Vehicle Type</label>
+                            <select id="vehicleType" name="vehicleType" class="form-control form-select" required>
+                                <option value="">Select Vehicle Type</option>
+                                <option value="motorcycle">Motorcycle</option>
+                                <option value="bicycle">Bicycle</option>
+                                <option value="car">Car</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="vehicleModel" class="form-label required">Vehicle Model</label>
+                            <input type="text" id="vehicleModel" name="vehicleModel" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="vehicleYear" class="form-label required">Vehicle Year</label>
+                            <input type="number" id="vehicleYear" name="vehicleYear" min="1990" max="2025" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="vehiclePlate" class="form-label required">License Plate Number</label>
+                            <input type="text" id="vehiclePlate" name="vehiclePlate" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-group full-width">
+                            <label class="form-label required">Upload Vehicle Registration</label>
+                            <div class="file-upload" id="vehicleRegUpload">
+                                <i class="fas fa-file-alt file-upload-icon"></i>
+                                <div class="file-upload-text">Click to upload or drag and drop</div>
+                                <div class="file-upload-hint">JPG, PNG or PDF (max. 5MB)</div>
+                                <input type="file" id="vehicleReg" name="vehicleReg" class="file-upload-input" accept="image/*,.pdf" required>
+                            </div>
+                            <div class="file-preview" id="vehicleRegPreview"></div>
+                        </div>
+                    </div>
+                    
+                    <h2 class="section-title" style="font-size: 1.8rem; text-align: left; margin-bottom: var(--spacing-lg);">Availability & Preferences</h2>
+                    
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label class="form-label required">Available Days</label>
+                            <div class="form-check">
+                                <input type="checkbox" id="monday" name="availableDays" value="monday" class="form-check-input" checked>
+                                <label for="monday" class="form-check-label">Monday</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" id="tuesday" name="availableDays" value="tuesday" class="form-check-input" checked>
+                                <label for="tuesday" class="form-check-label">Tuesday</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" id="wednesday" name="availableDays" value="wednesday" class="form-check-input" checked>
+                                <label for="wednesday" class="form-check-label">Wednesday</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" id="thursday" name="availableDays" value="thursday" class="form-check-input" checked>
+                                <label for="thursday" class="form-check-label">Thursday</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" id="friday" name="availableDays" value="friday" class="form-check-input" checked>
+                                <label for="friday" class="form-check-label">Friday</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" id="saturday" name="availableDays" value="saturday" class="form-check-input">
+                                <label for="saturday" class="form-check-label">Saturday</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" id="sunday" name="availableDays" value="sunday" class="form-check-input">
+                                <label for="sunday" class="form-check-label">Sunday</label>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="shiftPreference" class="form-label required">Shift Preference</label>
+                            <select id="shiftPreference" name="shiftPreference" class="form-control form-select" required>
+                                <option value="">Select Preference</option>
+                                <option value="morning">Morning (8AM - 12PM)</option>
+                                <option value="afternoon">Afternoon (12PM - 5PM)</option>
+                                <option value="evening">Evening (5PM - 10PM)</option>
+                                <option value="full-day">Full Day (8AM - 5PM)</option>
+                                <option value="flexible">Flexible</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group full-width">
+                            <label for="deliveryExperience" class="form-label">Delivery Experience (if any)</label>
+                            <textarea id="deliveryExperience" name="deliveryExperience" class="form-control form-textarea"></textarea>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <div class="form-check">
+                            <input type="checkbox" id="termsAgreement" name="termsAgreement" class="form-check-input" required>
+                            <label for="termsAgreement" class="form-check-label">
+                                I agree to the <a href="terms.html" target="_blank">Terms of Service</a> and <a href="privacy.html" target="_blank">Privacy Policy</a> of Asbeza365
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <div class="form-check">
+                            <input type="checkbox" id="backgroundCheck" name="backgroundCheck" class="form-check-input" required>
+                            <label for="backgroundCheck" class="form-check-label">
+                                I consent to a background check as part of the application process
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <div class="form-actions">
+                        <button type="submit" class="btn btn-primary btn-submit">
+                            <i class="fas fa-paper-plane"></i> Submit Application
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+   <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-column footer-about">
+                    <h3>Asbeza365</h3>
+                    <p>Your ultimate grocery price comparison platform in Addis Ababa. Save money on every purchase with our smart shopping tools.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-telegram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html" class="footer-link"><i class="fas fa-chevron-right"></i> Home</a></li>
+                        <li><a href="shops.html" class="footer-link"><i class="fas fa-chevron-right"></i> Shops</a></li>
+                        <li><a href="products.html" class="footer-link"><i class="fas fa-chevron-right"></i> Products</a></li>
+                        <li><a href="deals.html" class="footer-link"><i class="fas fa-chevron-right"></i> Deals</a></li>
+                        <li><a href="about.html" class="footer-link"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Customer Service</h3>
+                    <ul class="footer-links">
+                        <li><a href="faq.html" class="footer-link"><i class="fas fa-chevron-right"></i> FAQ</a></li>
+                        <li><a href="contact.html" class="footer-link"><i class="fas fa-chevron-right"></i> Contact Us</a></li>
+                        <li><a href="privacy.html" class="footer-link"><i class="fas fa-chevron-right"></i> Privacy Policy</a></li>
+                        <li><a href="terms.html" class="footer-link"><i class="fas fa-chevron-right"></i> Terms of Service</a></li>
+                        <li><a href="shipping.html" class="footer-link"><i class="fas fa-chevron-right"></i> Shipping & Returns</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Contact Info</h3>
+                    <ul class="footer-links">
+                        <li><a href="#" class="footer-link"><i class="fas fa-map-marker-alt"></i> Bole Road, Addis Ababa, Ethiopia</a></li>
+                        <li><a href="tel:+251934592679" class="footer-link"><i class="fas fa-phone"></i> +251 934592679</a></li>
+                        <li><a href="mailto:info@asbeza365.com" class="footer-link"><i class="fas fa-envelope"></i> info@asbeza365.com</a></li>
+                        <li><a href="#" class="footer-link"><i class="fas fa-clock"></i> Mon-Sat: 8AM - 8PM</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="copyright">&copy; 2025 Asbeza365. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Main JavaScript -->
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const closeMenu = document.getElementById('closeMenu');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const overlay = document.getElementById('overlay');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.add('open');
+            overlay.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        });
+
+        closeMenu.addEventListener('click', () => {
+            mobileMenu.classList.remove('open');
+            overlay.classList.remove('active');
+            document.body.style.overflow = '';
+        });
+
+        overlay.addEventListener('click', () => {
+            mobileMenu.classList.remove('open');
+            overlay.classList.remove('active');
+            document.body.style.overflow = '';
+        });
+
+        // Header Scroll Effect
+        const header = document.getElementById('header');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
+        // Language Configuration
+        const languageConfig = {
+            en: {
+                shopCompare: "Compare Prices",
+                bestDeal: "🏆 Best Deal",
+                addToCart: "Add to Cart",
+                currency: "ETB",
+                nav: {
+                    home: "Home",
+                    shops: "Shops",
+                    products: "Products",
+                    deals: "Deals",
+                    about: "About",
+                    contact: "Contact",
+                    profile: "Profile",
+                    login: "Login",
+                    logout: "Logout",
+                    driver: "Become a Driver"
+                },
+                profile: {
+                    notLoggedIn: "Please login to view your profile",
+                    guest: "Guest",
+                    phoneNotSet: "Phone number not set"
+                }
+            },
+            am: {
+                shopCompare: "ዋጋ አወዳድር",
+                bestDeal: "🏆 ምርጥ ቅናሽ",
+                addToCart: "ወደ ጋሪ ጨምር",
+                currency: "ብር",
+                nav: {
+                    home: "መነሻ",
+                    shops: "መደብሮች",
+                    products: "ምርቶች",
+                    deals: "ቅናሾች",
+                    about: "ስለ እኛ",
+                    contact: "አግኙን",
+                    profile: "መገለጫ",
+                    login: "ግባ",
+                    logout: "ውጣ",
+                    driver: "መኪና ሹፌር ይሁኑ"
+                },
+                profile: {
+                    notLoggedIn: "እባክዎ መገለጫዎን ለማየት ይግቡ",
+                    guest: "እንግዳ",
+                    phoneNotSet: "ስልክ ቁጥር አልተዘጋጀም"
+                }
+            },
+            om: {
+                shopCompare: "Qaallii Itoophiyaa",
+                bestDeal: "🏆 Gaarii Tokkummaa",
+                addToCart: "Gaaritti Dabaladhu",
+                currency: "ETB",
+                nav: {
+                    home: "Mana",
+                    shops: "Dukaanota",
+                    products: "Oomishaalee",
+                    deals: "Qaallii",
+                    about: "Waa'ee keenya",
+                    contact: "Nu qunnamtii",
+                    profile: "Seenaa",
+                    login: "Seensa",
+                    logout: "Ba'i",
+                    driver: "Konkolaachisaa ta'i"
+                },
+                profile: {
+                    notLoggedIn: "Maaloo seenaa kee ilaaluuf seeni",
+                    guest: "Keessummaa",
+                    phoneNotSet: "Lakkoofsa bilbilaa hin qabne"
+                }
+            },
+            ti: {
+                shopCompare: "ዕዳጋ ኣወዳድር",
+                bestDeal: "🏆 ምርጥ ዋጋ",
+                addToCart: "ናብ ጋሪ ወስኽ",
+                currency: "ብር",
+                nav: {
+                    home: "ቤት",
+                    shops: "ድኳን",
+                    products: "ዕረፍቲ",
+                    deals: "ሽምጥል",
+                    about: "ብዛዕባና",
+                    contact: "ርኸቡና",
+                    profile: "መግለጺ",
+                    login: "እቶ",
+                    logout: "ውጻእ",
+                    driver: "ሻፍር ኮነ"
+                },
+                profile: {
+                    notLoggedIn: "በጃኹም መግለጽኩም ንምርኣይ እቶ",
+                    guest: "ኣጋር",
+                    phoneNotSet: "ቁጽሪ ስልኪ ኣይተሰራሕኩን"
+                }
+            }
+        };
+
+        // Current language
+        let currentLanguage = 'en';
+        const dirRTL = ['am', 'ti'];
+
+        // DOM Elements
+        const languageOptions = document.querySelectorAll('.language-option');
+        const languageBtn = document.querySelector('.language-btn');
+        const htmlElement = document.documentElement;
+
+        // Set language
+        function setLanguage(lang) {
+            currentLanguage = lang;
+            
+            // Update HTML direction
+            if (dirRTL.includes(lang)) {
+                htmlElement.dir = 'rtl';
+                htmlElement.classList.add('rtl');
+            } else {
+                htmlElement.dir = 'ltr';
+                htmlElement.classList.remove('rtl');
+            }
+            
+            // Update language button
+            const langData = {
+                en: { flag: '🇬🇧', name: 'EN' },
+                am: { flag: '🇪🇹', name: 'AM' },
+                om: { flag: '🇪🇹', name: 'OM' },
+                ti: { flag: '🇪🇹', name: 'TI' }
+            };
+            
+            languageBtn.innerHTML = `
+                <span class="language-flag">${langData[lang].flag}</span>
+                <span>${langData[lang].name}</span>
+                <i class="fas fa-chevron-down"></i>
+            `;
+            
+            // Translate navigation items
+            const navItems = document.querySelectorAll('.nav-item:not(.auth-button)');
+            if (navItems.length > 0) {
+                navItems.forEach(item => {
+                    const key = item.textContent.trim().toLowerCase();
+                    if (languageConfig[lang].nav[key]) {
+                        item.textContent = languageConfig[lang].nav[key];
+                    }
+                });
+            }
+            
+            // Translate mobile menu items
+            const mobileNavItems = document.querySelectorAll('.mobile-nav-item');
+            mobileNavItems.forEach(item => {
+                const key = item.textContent.trim().toLowerCase();
+                if (languageConfig[lang].nav[key]) {
+                    item.textContent = languageConfig[lang].nav[key];
+                }
+            });
+        }
+
+        // Language switcher event listeners
+        languageOptions.forEach(option => {
+            option.addEventListener('click', () => {
+                const lang = option.getAttribute('data-lang');
+                setLanguage(lang);
+                
+                // Close dropdown after selection
+                document.querySelector('.language-dropdown').style.display = 'none';
+            });
+        });
+
+        // Close dropdown when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('.language-switcher')) {
+                document.querySelector('.language-dropdown').style.display = 'none';
+            }
+        });
+
+        // Initialize with English
+        setLanguage('en');
+
+        // File Upload Handling
+        function setupFileUpload(uploadId, previewId) {
+            const uploadElement = document.getElementById(uploadId);
+            const previewElement = document.getElementById(previewId);
+            const fileInput = uploadElement.querySelector('input[type="file"]');
+            
+            fileInput.addEventListener('change', function(e) {
+                const files = e.target.files;
+                previewElement.innerHTML = '';
+                
+                if (files && files.length > 0) {
+                    for (let i = 0; i < files.length; i++) {
+                        const file = files[i];
+                        const reader = new FileReader();
+                        
+                        reader.onload = function(e) {
+                            const previewItem = document.createElement('div');
+                            previewItem.className = 'file-preview-item';
+                            
+                            if (file.type.startsWith('image/')) {
+                                const img = document.createElement('img');
+                                img.src = e.target.result;
+                                img.className = 'file-preview-image';
+                                previewItem.appendChild(img);
+                            } else {
+                                const docIcon = document.createElement('div');
+                                docIcon.innerHTML = `<i class="fas fa-file-pdf" style="font-size: 3rem; color: #777; margin: 20px auto; display: block;"></i>`;
+                                previewItem.appendChild(docIcon);
+                                
+                                const fileName = document.createElement('div');
+                                fileName.textContent = file.name;
+                                fileName.style.textAlign = 'center';
+                                fileName.style.fontSize = '0.8rem';
+                                previewItem.appendChild(fileName);
+                            }
+                            
+                            const removeBtn = document.createElement('div');
+                            removeBtn.className = 'file-preview-remove';
+                            removeBtn.innerHTML = '<i class="fas fa-times"></i>';
+                            removeBtn.addEventListener('click', function(e) {
+                                e.stopPropagation();
+                                previewItem.remove();
+                                fileInput.value = '';
+                            });
+                            
+                            previewItem.appendChild(removeBtn);
+                            previewElement.appendChild(previewItem);
+                        };
+                        
+                        if (file.type.startsWith('image/')) {
+                            reader.readAsDataURL(file);
+                        } else {
+                            reader.readAsText(file);
+                        }
+                    }
+                }
+            });
+            
+            // Handle drag and drop
+            uploadElement.addEventListener('dragover', function(e) {
+                e.preventDefault();
+                uploadElement.style.borderColor = var(--primary);
+                uploadElement.style.backgroundColor = var(--primary-light);
+            });
+            
+            uploadElement.addEventListener('dragleave', function(e) {
+                e.preventDefault();
+                uploadElement.style.borderColor = var(--background-dark);
+                uploadElement.style.backgroundColor = var(--background-light);
+            });
+            
+            uploadElement.addEventListener('drop', function(e) {
+                e.preventDefault();
+                uploadElement.style.borderColor = var(--background-dark);
+                uploadElement.style.backgroundColor = var(--background-light);
+                
+                fileInput.files = e.dataTransfer.files;
+                const event = new Event('change');
+                fileInput.dispatchEvent(event);
+            });
+        }
+
+        // Setup file uploads
+        setupFileUpload('idFrontUpload', 'idFrontPreview');
+        setupFileUpload('idBackUpload', 'idBackPreview');
+        setupFileUpload('photoUpload', 'photoPreview');
+        setupFileUpload('vehicleRegUpload', 'vehicleRegPreview');
+
+        // Form Validation and Submission
+        const registrationForm = document.getElementById('deliveryRegistrationForm');
+        const formMessage = document.getElementById('formMessage');
+        
+        registrationForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Validate age (must be at least 18)
+            const dobInput = document.getElementById('dob');
+            if (dobInput.value) {
+                const dob = new Date(dobInput.value);
+                const today = new Date();
+                let age = today.getFullYear() - dob.getFullYear();
+                const monthDiff = today.getMonth() - dob.getMonth();
+                
+                if (monthDiff < 0 || (monthDiff === 0 && today.getDate() < dob.getDate())) {
+                    age--;
+                }
+                
+                if (age < 18) {
+                    showFormMessage('error', 'You must be at least 18 years old to register as a delivery driver.');
+                    return;
+                }
+            }
+            
+            // Validate at least one available day is selected
+            const availableDays = document.querySelectorAll('input[name="availableDays"]:checked');
+            if (availableDays.length === 0) {
+                showFormMessage('error', 'Please select at least one available day.');
+                return;
+            }
+            
+            // Validate terms agreement
+            if (!document.getElementById('termsAgreement').checked) {
+                showFormMessage('error', 'You must agree to the Terms of Service and Privacy Policy.');
+                return;
+            }
+            
+            if (!document.getElementById('backgroundCheck').checked) {
+                showFormMessage('error', 'You must consent to the background check.');
+                return;
+            }
+            
+            // If all validations pass, submit the form
+            submitForm();
+        });
+        
+        function showFormMessage(type, message) {
+            formMessage.textContent = message;
+            formMessage.className = 'form-message ' + type;
+        }
+        
+        function submitForm() {
+            // In a real application, you would send this data to your server
+            // For demonstration, we'll simulate a successful submission
+            
+            // Collect form data
+            const formData = new FormData(registrationForm);
+            const formObject = {};
+            
+            formData.forEach((value, key) => {
+                if (key === 'availableDays') {
+                    if (!formObject[key]) {
+                        formObject[key] = [];
+                    }
+                    formObject[key].push(value);
+                } else {
+                    formObject[key] = value;
+                }
+            });
+            
+            // For files, we would normally upload them to a server
+            // Here we just show a success message
+            showFormMessage('success', 'Thank you for your application! We will review your information and contact you within 3 business days.');
+            
+            // Reset form
+            registrationForm.reset();
+            document.querySelectorAll('.file-preview').forEach(el => el.innerHTML = '');
+            
+            // In a real implementation, you would send this data to your email
+            // Here's how you might do it with a server-side script:
+            /*
+            fetch('send_email.php', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    showFormMessage('success', 'Thank you for your application! We will review your information and contact you within 3 business days.');
+                    registrationForm.reset();
+                    document.querySelectorAll('.file-preview').forEach(el => el.innerHTML = '');
+                } else {
+                    showFormMessage('error', 'There was an error submitting your application. Please try again.');
+                }
+            })
+            .catch(error => {
+                showFormMessage('error', 'There was an error submitting your application. Please try again.');
+                console.error('Error:', error);
+            });
+            */
+            
+            // For demonstration, log the form data to console
+            console.log('Form submission data:', formObject);
+        }
+
+        // Animation on scroll
+        const animateOnScroll = () => {
+            const elements = document.querySelectorAll('.fade-in, .slide-up');
+            
+            elements.forEach(element => {
+                const elementPosition = element.getBoundingClientRect().top;
+                const screenPosition = window.innerHeight / 1.2;
+                
+                if (elementPosition < screenPosition) {
+                    element.style.opacity = '1';
+                    element.style.transform = 'translateY(0)';
+                }
+            });
+        };
+
+        // Run once on load
+        animateOnScroll();
+        
+        // Run on scroll
+        window.addEventListener('scroll', animateOnScroll);
+    </script>
+</body>
+</html>s

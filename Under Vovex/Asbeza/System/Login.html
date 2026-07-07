@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <!-- Other meta tags -->
+    
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'GA_MEASUREMENT_ID');
+    </script>
+</head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asbeza365 | Smart Grocery Platform</title>
+    <link rel="icon" href="./Image/icon.ico" type="image/x-icon">
+    <style>
+        /* ===== Modern Design System ===== */
+        :root {
+            /* Color Palette */
+            --primary: #10B981;
+            --primary-dark: #059669;
+            --accent: #3B82F6;
+            --dark: #1F2937;
+            --light: #F9FAFB;
+            --gray: #E5E7EB;
+            --text: #111827;
+            
+            /* Spacing */
+            --space-xs: 0.25rem;
+            --space-sm: 0.5rem;
+            --space-md: 1rem;
+            --space-lg: 1.5rem;
+            --space-xl: 2rem;
+            
+            /* Shadows */
+            --shadow-sm: 0 1px 2px 0 rgba(0,0,0,0.05);
+            --shadow-md: 0 4px 6px -1px rgba(0,0,0,0.1);
+            --shadow-lg: 0 10px 15px -3px rgba(0,0,0,0.1);
+            --shadow-xl: 0 20px 25px -5px rgba(0,0,0,0.1);
+            
+            /* Borders */
+            --radius-sm: 0.375rem;
+            --radius-md: 0.5rem;
+            --radius-lg: 0.75rem;
+            
+            /* Animations */
+            --transition-fast: 0.15s;
+            --transition-normal: 0.3s;
+            --transition-slow: 0.5s;
+        }
+
+        /* ===== Base Styles ===== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+            background-color: var(--light);
+            color: var(--text);
+            line-height: 1.5;
+            overflow-x: hidden;
+        }
+
+        /* ===== Background Animation ===== */
+        .bg-animation {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            overflow: hidden;
+        }
+
+        .bg-circle {
+            position: absolute;
+            border-radius: 50%;
+            background: radial-gradient(circle, rgba(16,185,129,0.1) 0%, rgba(16,185,129,0) 70%);
+            animation: float 15s infinite linear;
+        }
+
+        .bg-circle:nth-child(1) {
+            width: 300px;
+            height: 300px;
+            top: 10%;
+            left: 5%;
+            animation-delay: 0s;
+        }
+
+        .bg-circle:nth-child(2) {
+            width: 200px;
+            height: 200px;
+            top: 60%;
+            left: 80%;
+            animation-delay: 2s;
+        }
+
+        .bg-circle:nth-child(3) {
+            width: 400px;
+            height: 400px;
+            top: 30%;
+            left: 60%;
+            animation-delay: 4s;
+        }
+
+        .bg-circle:nth-child(4) {
+            width: 250px;
+            height: 250px;
+            top: 70%;
+            left: 20%;
+            animation-delay: 6s;
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(0) rotate(0deg);
+            }
+            50% {
+                transform: translateY(-20px) rotate(180deg);
+            }
+            100% {
+                transform: translateY(0) rotate(360deg);
+            }
+        }
+
+        /* ===== Auth Container ===== */
+        .auth-container {
+            display: flex;
+            min-height: 100vh;
+        }
+
+        .auth-left {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: var(--space-xl);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .auth-right {
+            flex: 1;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: var(--space-xl);
+            box-shadow: var(--shadow-xl);
+            z-index: 1;
+        }
+
+        /* ===== Auth Form ===== */
+        .auth-form {
+            max-width: 400px;
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        .auth-logo {
+            display: flex;
+            align-items: center;
+            gap: var(--space-sm);
+            margin-bottom: var(--space-xl);
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary);
+        }
+
+        .auth-logo-icon {
+            width: 40px;
+            height: 40px;
+            background-color: var(--primary);
+            color: white;
+            border-radius: var(--radius-sm);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+
+        .auth-title {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: var(--space-sm);
+        }
+
+        .auth-subtitle {
+            color: #6B7280;
+            margin-bottom: var(--space-xl);
+        }
+
+        .form-group {
+            margin-bottom: var(--space-md);
+            position: relative;
+        }
+
+        .form-label {
+            display: block;
+            margin-bottom: var(--space-xs);
+            font-weight: 500;
+        }
+
+        .form-input {
+            width: 100%;
+            padding: var(--space-sm) var(--space-md);
+            border: 1px solid var(--gray);
+            border-radius: var(--radius-sm);
+            font-size: 1rem;
+            transition: all var(--transition-fast);
+        }
+
+        .form-input:focus {
+            outline: none;
+            border-color: var(--primary);
+            box-shadow: 0 0 0 3px rgba(16,185,129,0.1);
+        }
+
+        .password-toggle {
+            position: absolute;
+            right: var(--space-md);
+            top: 50%;
+            transform: translateY(-50%);
+            cursor: pointer;
+            color: #6B7280;
+        }
+
+        .form-options {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: var(--space-md);
+        }
+
+        .remember-me {
+            display: flex;
+            align-items: center;
+            gap: var(--space-xs);
+        }
+
+        .remember-me input {
+            accent-color: var(--primary);
+        }
+
+        .forgot-password {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .auth-btn {
+            width: 100%;
+            padding: var(--space-sm) var(--space-md);
+            background-color: var(--primary);
+            color: white;
+            border: none;
+            border-radius: var(--radius-sm);
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all var(--transition-fast);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: var(--space-sm);
+        }
+
+        .auth-btn:hover {
+            background-color: var(--primary-dark);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .auth-divider {
+            display: flex;
+            align-items: center;
+            margin: var(--space-lg) 0;
+            color: #6B7280;
+        }
+
+        .auth-divider::before,
+        .auth-divider::after {
+            content: '';
+            flex: 1;
+            height: 1px;
+            background-color: var(--gray);
+        }
+
+        .auth-divider span {
+            padding: 0 var(--space-md);
+        }
+
+        .social-login {
+            display: flex;
+            gap: var(--space-md);
+            margin-bottom: var(--space-lg);
+        }
+
+        .social-btn {
+            flex: 1;
+            padding: var(--space-sm);
+            border: 1px solid var(--gray);
+            border-radius: var(--radius-sm);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: var(--space-sm);
+            cursor: pointer;
+            transition: all var(--transition-fast);
+        }
+
+        .social-btn:hover {
+            border-color: var(--primary);
+            color: var(--primary);
+        }
+
+        .auth-switch {
+            text-align: center;
+            margin-top: var(--space-lg);
+        }
+
+        .auth-switch a {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        /* ===== Left Panel Content ===== */
+        .auth-features {
+            max-width: 500px;
+        }
+
+        .feature-card {
+            background-color: rgba(255,255,255,0.9);
+            backdrop-filter: blur(10px);
+            border-radius: var(--radius-md);
+            padding: var(--space-md);
+            margin-bottom: var(--space-md);
+            box-shadow: var(--shadow-sm);
+            transition: all var(--transition-normal);
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .feature-icon {
+            width: 48px;
+            height: 48px;
+            background-color: var(--primary);
+            color: white;
+            border-radius: var(--radius-sm);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: var(--space-sm);
+            font-size: 1.25rem;
+        }
+
+        .feature-title {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: var(--space-xs);
+        }
+
+        /* ===== Animations ===== */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .animate-in {
+            animation: fadeIn 0.5s ease-out forwards;
+        }
+
+        .delay-1 { animation-delay: 0.1s; }
+        .delay-2 { animation-delay: 0.2s; }
+        .delay-3 { animation-delay: 0.3s; }
+        .delay-4 { animation-delay: 0.4s; }
+
+        /* ===== Responsive Design ===== */
+        @media (max-width: 1024px) {
+            .auth-container {
+                flex-direction: column;
+            }
+            
+            .auth-left {
+                display: none;
+            }
+            
+            .auth-right {
+                padding: var(--space-xl) var(--space-md);
+            }
+        }
+
+        /* ===== Dark Mode ===== */
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --light: #111827;
+                --dark: #F9FAFB;
+                --gray: #1F2937;
+                --text: #F3F4F6;
+            }
+            
+            .auth-right {
+                background-color: #1F2937;
+            }
+            
+            .form-input {
+                background-color: #1F2937;
+                border-color: #374151;
+                color: white;
+            }
+            
+            .social-btn {
+                background-color: #1F2937;
+                border-color: #374151;
+            }
+            
+            .feature-card {
+                background-color: rgba(31, 41, 55, 0.8);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Background Animation -->
+    <div class="bg-animation">
+        <div class="bg-circle"></div>
+        <div class="bg-circle"></div>
+        <div class="bg-circle"></div>
+        <div class="bg-circle"></div>
+    </div>
+
+    <!-- Auth Container -->
+    <div class="auth-container">
+        <!-- Left Panel (Features) -->
+        <div class="auth-left">
+            <div class="auth-features">
+                <div class="feature-card animate-in delay-1">
+                    <div class="feature-icon">💸</div>
+                    <h3 class="feature-title">Save Up to 30%</h3>
+                    <p>Compare prices across all major supermarkets in Addis to get the best deals.</p>
+                </div>
+                
+                <div class="feature-card animate-in delay-2">
+                    <div class="feature-icon">⏱️</div>
+                    <h3 class="feature-title">Smart Scheduling</h3>
+                    <p>Automate your grocery deliveries so you never run out of essentials.</p>
+                </div>
+                
+                <div class="feature-card animate-in delay-3">
+                    <div class="feature-icon">🛒</div>
+                    <h3 class="feature-title">All Stores in One Place</h3>
+                    <p>Access Queens, Fresh Corner, Shoa, and more from a single platform.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Panel (Auth Form) -->
+        <div class="auth-right">
+            <form class="auth-form" id="loginForm">
+                <div class="auth-logo animate-in">
+                    <div class="auth-logo-icon">A</div>
+                    <span>አስቤዛ 365</span>
+                </div>
+                
+                <h1 class="auth-title animate-in delay-1">Welcome Back</h1>
+                <p class="auth-subtitle animate-in delay-1">Sign in to access your smart grocery dashboard</p>
+                
+                <div class="form-group animate-in delay-2">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" id="email" class="form-input" placeholder="your@email.com" required>
+                </div>
+                
+                <div class="form-group animate-in delay-2">
+                    <label for="password" class="form-label">Password</label>
+                    <input type="password" id="password" class="form-input" placeholder="••••••••" required>
+                    <span class="password-toggle">👁️</span>
+                </div>
+                
+                <div class="form-options animate-in delay-3">
+                    <div class="remember-me">
+                        <input type="checkbox" id="remember">
+                        <label for="remember">Remember me</label>
+                    </div>
+                    <a href="#" class="forgot-password">Forgot password?</a>
+                </div>
+                
+                <button type="submit" class="auth-btn animate-in delay-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"></path>
+                        <polyline points="10 17 15 12 10 7"></polyline>
+                        <line x1="15" y1="12" x2="3" y2="12"></line>
+                    </svg>
+                    Sign In
+                </button>
+                
+                <div class="auth-divider animate-in delay-4">
+                    <span>OR</span>
+                </div>
+                
+                <div class="social-login animate-in delay-4">
+                    <div class="social-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                        </svg>
+                        Facebook
+                    </div>
+                    <div class="social-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                        </svg>
+                        Google
+                    </div>
+                </div>
+                
+                <div class="auth-switch animate-in delay-4">
+                    Don't have an account? <a href="#" id="switchToSignup">Sign up</a>
+                </div>
+            </form>
+
+            <form class="auth-form" id="signupForm" style="display: none;">
+                <div class="auth-logo">
+                    <div class="auth-logo-icon">A</div>
+                    <span>አስቤዛ 365</span>
+                </div>
+                
+                <h1 class="auth-title">Create Account</h1>
+                <p class="auth-subtitle">Join the smart grocery revolution</p>
+                
+                <div class="form-group">
+                    <label for="signup-name" class="form-label">Full Name</label>
+                    <input type="text" id="signup-name" class="form-input" placeholder="Abebe Kebede" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="signup-email" class="form-label">Email</label>
+                    <input type="email" id="signup-email" class="form-input" placeholder="your@email.com" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="signup-phone" class="form-label">Phone Number</label>
+                    <input type="tel" id="signup-phone" class="form-input" placeholder="+251 9XX XXX XXX" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="signup-password" class="form-label">Password</label>
+                    <input type="password" id="signup-password" class="form-input" placeholder="••••••••" required>
+                    <span class="password-toggle">👁️</span>
+                </div>
+                
+                <div class="form-group">
+                    <label for="signup-confirm" class="form-label">Confirm Password</label>
+                    <input type="password" id="signup-confirm" class="form-input" placeholder="••••••••" required>
+                    <span class="password-toggle">👁️</span>
+                </div>
+                
+                <div class="form-group">
+                    <div class="remember-me">
+                        <input type="checkbox" id="terms" required>
+                        <label for="terms">I agree to the <a href="#" style="color: var(--primary);">Terms of Service</a> and <a href="#" style="color: var(--primary);">Privacy Policy</a></label>
+                    </div>
+                </div>
+                
+                <button type="submit" class="auth-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                        <circle cx="8.5" cy="7" r="4"></circle>
+                        <line x1="20" y1="8" x2="20" y2="14"></line>
+                        <line x1="23" y1="11" x2="17" y2="11"></line>
+                    </svg>
+                    Create Account
+                </button>
+                
+                <div class="auth-divider">
+                    <span>OR</span>
+                </div>
+                
+                <div class="social-login">
+                    <div class="social-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                        </svg>
+                        Facebook
+                    </div>
+                    <div class="social-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                        </svg>
+                        Google
+                    </div>
+                </div>
+                
+                <div class="auth-switch">
+                    Already have an account? <a href="#" id="switchToLogin">Sign in</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        // ===== Form Switching =====
+        const loginForm = document.getElementById('loginForm');
+        const signupForm = document.getElementById('signupForm');
+        const switchToSignup = document.getElementById('switchToSignup');
+        const switchToLogin = document.getElementById('switchToLogin');
+        
+        switchToSignup.addEventListener('click', (e) => {
+            e.preventDefault();
+            loginForm.style.display = 'none';
+            signupForm.style.display = 'block';
+            document.querySelector('.auth-title').textContent = 'Create Account';
+            document.querySelector('.auth-subtitle').textContent = 'Join the smart grocery revolution';
+        });
+        
+        switchToLogin.addEventListener('click', (e) => {
+            e.preventDefault();
+            signupForm.style.display = 'none';
+            loginForm.style.display = 'block';
+            document.querySelector('.auth-title').textContent = 'Welcome Back';
+            document.querySelector('.auth-subtitle').textContent = 'Sign in to access your smart grocery dashboard';
+        });
+        
+        // ===== Password Toggle =====
+        const passwordToggles = document.querySelectorAll('.password-toggle');
+        passwordToggles.forEach(toggle => {
+            toggle.addEventListener('click', function() {
+                const input = this.previousElementSibling;
+                if (input.type === 'password') {
+                    input.type = 'text';
+                    this.textContent = '👁️';
+                } else {
+                    input.type = 'password';
+                    this.textContent = '👁️';
+                }
+            });
+        });
+        
+        // ===== Form Submission =====
+        loginForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+            
+            // Simulate login
+            document.querySelector('.auth-btn').innerHTML = '🔐 Authenticating...';
+            
+            setTimeout(() => {
+                alert(`Welcome back! You'll be redirected to your dashboard.`);
+                // In real app: window.location.href = '/dashboard';
+            }, 1500);
+        });
+        
+        signupForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const name = document.getElementById('signup-name').value;
+            const email = document.getElementById('signup-email').value;
+            const phone = document.getElementById('signup-phone').value;
+            
+            // Simulate signup
+            document.querySelector('#signupForm .auth-btn').innerHTML = '✨ Creating account...';
+            
+            setTimeout(() => {
+                alert(`Welcome to Asbeza365, ${name}! Check your email to verify your account.`);
+                signupForm.style.display = 'none';
+                loginForm.style.display = 'block';
+                document.querySelector('.auth-title').textContent = 'Welcome Back';
+                document.querySelector('.auth-subtitle').textContent = 'Sign in to access your smart grocery dashboard';
+                document.getElementById('email').value = email;
+                document.getElementById('password').value = '';
+                document.querySelector('.auth-btn').innerHTML = 'Sign In';
+            }, 2000);
+        });
+        
+        // ===== Animate elements on load =====
+        document.addEventListener('DOMContentLoaded', () => {
+            const animatedElements = document.querySelectorAll('.animate-in');
+            animatedElements.forEach(el => {
+                el.style.opacity = '0';
+            });
+            
+            setTimeout(() => {
+                animatedElements.forEach(el => {
+                    el.style.opacity = '1';
+                });
+            }, 100);
+        });
+    </script>
+</body>
+</html>

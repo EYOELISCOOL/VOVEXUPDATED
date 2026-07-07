@@ -1,0 +1,2044 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <!-- Other meta tags -->
+    
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'GA_MEASUREMENT_ID');
+    </script>
+</head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Asbeza365 - Products</title>
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Swiper JS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+  
+  <!-- Local Ethiopic Font -->
+  <style>
+      @font-face {
+          font-family: 'Abyssinica SIL';
+          src: url('/fonts/AbyssinicaSIL-Regular.ttf') format('truetype');
+      }
+  </style>
+  <link rel="icon" href="./icon.ico" type="image/x-icon">
+
+  <style>
+      /* CSS Variables */
+      :root {
+          --primary: #056D30;
+          --primary-light: #E8F5E9;
+          --primary-dark: #034D21;
+          --secondary: #F0B429;
+          --secondary-light: #FFF8E1;
+          --secondary-dark: #F57F17;
+          --error: #C12A2A;
+          --success: #2E7D32;
+          --text-primary: #212121;
+          --text-secondary: #757575;
+          --background: #FFFFFF;
+          --background-light: #FAFAFA;
+          --background-dark: #F5F5F5;
+          --shadow-sm: 0 1px 3px rgba(0,0,0,0.12);
+          --shadow-md: 0 4px 6px rgba(0,0,0,0.1);
+          --shadow-lg: 0 10px 20px rgba(0,0,0,0.1);
+          --shadow-xl: 0 20px 40px rgba(0,0,0,0.15);
+          --border-radius-sm: 4px;
+          --border-radius-md: 8px;
+          --border-radius-lg: 12px;
+          --border-radius-xl: 16px;
+          --border-radius-2xl: 24px;
+          --spacing-xs: 4px;
+          --spacing-sm: 8px;
+          --spacing-md: 16px;
+          --spacing-lg: 24px;
+          --spacing-xl: 32px;
+          --spacing-2xl: 48px;
+          --spacing-3xl: 64px;
+      }
+
+      /* Base Styles */
+      * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+      }
+
+      html[dir="rtl"] {
+          font-family: 'Abyssinica SIL', serif;
+      }
+
+      body {
+          font-family: 'Poppins', sans-serif;
+          color: var(--text-primary);
+          background-color: var(--background-light);
+          line-height: 1.6;
+          overflow-x: hidden;
+      }
+
+      a {
+          text-decoration: none;
+          color: inherit;
+      }
+
+      button {
+          cursor: pointer;
+          border: none;
+          background: none;
+          font-family: inherit;
+      }
+
+      img {
+          max-width: 100%;
+          height: auto;
+      }
+
+      /* Animation */
+      @keyframes fadeIn {
+          from { opacity: 0; }
+          to { opacity: 1; }
+      }
+
+      @keyframes slideUp {
+          from { 
+              opacity: 0;
+              transform: translateY(20px);
+          }
+          to { 
+              opacity: 1;
+              transform: translateY(0);
+          }
+      }
+
+      /* Utility Classes */
+      .container {
+          width: 100%;
+          max-width: 1400px;
+          margin: 0 auto;
+          padding: 0 var(--spacing-xl);
+      }
+
+      .section {
+          padding: var(--spacing-3xl) 0;
+      }
+
+      .section-title {
+          font-family: 'Playfair Display', serif;
+          font-size: 2.5rem;
+          text-align: center;
+          margin-bottom: var(--spacing-2xl);
+          color: var(--primary);
+          position: relative;
+      }
+
+      .section-title::after {
+          content: '';
+          display: block;
+          width: 80px;
+          height: 4px;
+          background: var(--secondary);
+          margin: var(--spacing-md) auto 0;
+          border-radius: 2px;
+      }
+
+      .btn {
+          display: inline-block;
+          padding: var(--spacing-sm) var(--spacing-lg);
+          border-radius: var(--border-radius-md);
+          font-weight: 600;
+          transition: all 0.3s ease;
+      }
+
+      .btn-primary {
+          background-color: var(--primary);
+          color: white;
+      }
+
+      .btn-primary:hover {
+          background-color: var(--primary-dark);
+          transform: translateY(-2px);
+          box-shadow: var(--shadow-md);
+      }
+
+      .btn-secondary {
+          background-color: var(--secondary);
+          color: var(--text-primary);
+      }
+
+      .btn-secondary:hover {
+          background-color: var(--secondary-dark);
+          transform: translateY(-2px);
+          box-shadow: var(--shadow-md);
+      }
+
+      .text-center {
+          text-align: center;
+      }
+
+      .fade-in {
+          animation: fadeIn 0.8s ease forwards;
+      }
+
+      .slide-up {
+          animation: slideUp 0.8s ease forwards;
+      }
+
+      /* Header Styles */
+      header {
+          background-color: var(--primary);
+          color: white;
+          padding: var(--spacing-md) 0;
+          box-shadow: var(--shadow-md);
+          position: sticky;
+          top: 0;
+          z-index: 1000;
+          transition: all 0.3s ease;
+      }
+
+      header.scrolled {
+          padding: var(--spacing-sm) 0;
+          background-color: rgba(5, 109, 48, 0.95);
+          backdrop-filter: blur(10px);
+      }
+
+      .header-container {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+      }
+
+      .logo {
+          display: flex;
+          align-items: center;
+          gap: var(--spacing-sm);
+          font-size: 1.8rem;
+          font-weight: bold;
+          color: white;
+      }
+
+      .logo-icon {
+          font-size: 2rem;
+          color: var(--secondary);
+      }
+
+      .logo-text {
+          font-family: 'Playfair Display', serif;
+      }
+
+      .nav-items {
+          display: flex;
+          align-items: center;
+          gap: var(--spacing-xl);
+      }
+
+      .nav-item {
+          color: white;
+          font-weight: 500;
+          transition: all 0.3s ease;
+          position: relative;
+          padding: var(--spacing-sm) 0;
+      }
+
+      .nav-item::after {
+          content: '';
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 0;
+          height: 2px;
+          background-color: var(--secondary);
+          transition: width 0.3s ease;
+      }
+
+      .nav-item:hover::after {
+          width: 100%;
+      }
+
+      .nav-item:hover {
+          color: var(--secondary-light);
+      }
+
+      .header-right {
+          display: flex;
+          align-items: center;
+          gap: var(--spacing-lg);
+      }
+
+      .mobile-menu-btn {
+          display: none;
+          background: none;
+          border: none;
+          color: white;
+          font-size: 1.5rem;
+          z-index: 1001;
+      }
+
+      /* Language Switcher */
+      .language-switcher {
+          position: relative;
+      }
+
+      .language-btn {
+          display: flex;
+          align-items: center;
+          gap: var(--spacing-xs);
+          color: white;
+          background: rgba(255, 255, 255, 0.1);
+          padding: var(--spacing-xs) var(--spacing-sm);
+          border-radius: var(--border-radius-sm);
+          transition: all 0.3s ease;
+      }
+
+      .language-btn:hover {
+          background: rgba(255, 255, 255, 0.2);
+      }
+
+      .language-dropdown {
+          position: absolute;
+          top: 100%;
+          right: 0;
+          background: white;
+          border-radius: var(--border-radius-md);
+          box-shadow: var(--shadow-lg);
+          padding: var(--spacing-sm);
+          min-width: 150px;
+          display: none;
+          z-index: 100;
+          animation: fadeIn 0.3s ease;
+      }
+
+      .language-switcher:hover .language-dropdown {
+          display: block;
+      }
+
+      .language-option {
+          padding: var(--spacing-sm) var(--spacing-md);
+          border-radius: var(--border-radius-sm);
+          cursor: pointer;
+          color: var(--text-primary);
+          display: flex;
+          align-items: center;
+          gap: var(--spacing-sm);
+          transition: all 0.2s ease;
+      }
+
+      .language-option:hover {
+          background: var(--primary-light);
+          color: var(--primary);
+      }
+
+      /* Featured Products */
+      .products-grid {
+          display: grid;
+          grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+          gap: var(--spacing-2xl);
+          margin-top: var(--spacing-2xl);
+      }
+
+      .product-card {
+          background: white;
+          border-radius: var(--border-radius-xl);
+          overflow: hidden;
+          box-shadow: var(--shadow-md);
+          transition: all 0.3s ease;
+          position: relative;
+      }
+
+      .product-card:hover {
+          transform: translateY(-10px);
+          box-shadow: var(--shadow-lg);
+      }
+
+      .product-badge {
+          position: absolute;
+          top: var(--spacing-md);
+          left: var(--spacing-md);
+          background: var(--secondary);
+          color: var(--text-primary);
+          padding: var(--spacing-xs) var(--spacing-sm);
+          border-radius: var(--border-radius-sm);
+          font-weight: 600;
+          font-size: 0.8rem;
+          z-index: 2;
+      }
+
+      .product-image-container {
+          height: 200px;
+          position: relative;
+          overflow: hidden;
+      }
+
+      .product-image {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          transition: transform 0.5s ease;
+      }
+
+      .product-card:hover .product-image {
+          transform: scale(1.1);
+      }
+
+      .product-content {
+          padding: var(--spacing-lg);
+      }
+
+      .product-title {
+          font-size: 1.1rem;
+          margin-bottom: var(--spacing-sm);
+          font-weight: 600;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+      }
+
+      .product-price {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          margin-top: var(--spacing-md);
+      }
+
+      .price-current {
+          font-weight: bold;
+          color: var(--primary);
+          font-size: 1.2rem;
+      }
+
+      .price-original {
+          text-decoration: line-through;
+          color: var(--text-secondary);
+          font-size: 0.9rem;
+      }
+
+      .product-discount {
+          background: var(--error);
+          color: white;
+          padding: var(--spacing-xs) var(--spacing-sm);
+          border-radius: var(--border-radius-sm);
+          font-size: 0.8rem;
+          font-weight: 600;
+      }
+
+      .product-actions {
+          display: flex;
+          gap: var(--spacing-sm);
+          margin-top: var(--spacing-lg);
+      }
+
+      .product-btn {
+          flex: 1;
+          padding: var(--spacing-sm);
+          border-radius: var(--border-radius-sm);
+          font-weight: 500;
+          font-size: 0.9rem;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: var(--spacing-xs);
+          transition: all 0.3s ease;
+      }
+
+      .product-btn-primary {
+          background-color: var(--primary);
+          color: white;
+      }
+
+      .product-btn-primary:hover {
+          background-color: var(--primary-dark);
+      }
+
+      .product-btn-secondary {
+          background-color: var(--background-dark);
+          color: var(--text-primary);
+      }
+
+      .product-btn-secondary:hover {
+          background-color: #e0e0e0;
+      }
+
+      /* Search Bar */
+      .search-bar {
+          max-width: 700px;
+          margin: 0 auto var(--spacing-2xl);
+          display: flex;
+          background: white;
+          border-radius: var(--border-radius-xl);
+          overflow: hidden;
+          box-shadow: var(--shadow-xl);
+          transition: all 0.3s ease;
+      }
+
+      .search-bar:focus-within {
+          transform: translateY(-5px);
+          box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+      }
+
+      .search-input {
+          flex: 1;
+          padding: var(--spacing-lg);
+          border: none;
+          outline: none;
+          font-size: 1.1rem;
+          color: var(--text-primary);
+      }
+
+      .search-input::placeholder {
+          color: var(--text-secondary);
+          opacity: 0.7;
+      }
+
+      .search-button {
+          background-color: var(--secondary);
+          color: var(--text-primary);
+          padding: 0 var(--spacing-xl);
+          font-weight: 600;
+          font-size: 1.1rem;
+          transition: all 0.3s ease;
+          display: flex;
+          align-items: center;
+          gap: var(--spacing-sm);
+      }
+
+      .search-button:hover {
+          background-color: var(--secondary-dark);
+      }
+
+      /* Filter Section */
+      .filters {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-bottom: var(--spacing-xl);
+          flex-wrap: wrap;
+          gap: var(--spacing-md);
+      }
+
+      .filter-group {
+          display: flex;
+          align-items: center;
+          gap: var(--spacing-sm);
+      }
+
+      .filter-label {
+          font-weight: 500;
+          color: var(--text-secondary);
+      }
+
+      .filter-select {
+          padding: var(--spacing-sm) var(--spacing-md);
+          border-radius: var(--border-radius-md);
+          border: 1px solid var(--background-dark);
+          background-color: white;
+          font-family: inherit;
+          cursor: pointer;
+      }
+
+      /* Footer */
+      footer {
+          background-color: var(--primary-dark);
+          color: white;
+          padding: var(--spacing-3xl) 0 0;
+      }
+
+      .footer-container {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+          gap: var(--spacing-2xl);
+          margin-bottom: var(--spacing-2xl);
+      }
+
+      .footer-column h3 {
+          font-size: 1.3rem;
+          margin-bottom: var(--spacing-lg);
+          position: relative;
+          display: inline-block;
+      }
+
+      .footer-column h3::after {
+          content: '';
+          position: absolute;
+          bottom: -8px;
+          left: 0;
+          width: 50px;
+          height: 3px;
+          background: var(--secondary);
+      }
+
+      .footer-links {
+          list-style: none;
+      }
+
+      .footer-link {
+          margin-bottom: var(--spacing-sm);
+          transition: all 0.3s ease;
+          display: flex;
+          align-items: center;
+          gap: var(--spacing-sm);
+      }
+
+      .footer-link i {
+          width: 20px;
+          text-align: center;
+      }
+
+      .footer-link:hover {
+          color: var(--secondary);
+          transform: translateX(5px);
+      }
+
+      .footer-about p {
+          margin-bottom: var(--spacing-md);
+          opacity: 0.8;
+      }
+
+      .social-links {
+          display: flex;
+          gap: var(--spacing-md);
+          margin-top: var(--spacing-lg);
+      }
+
+      .social-link {
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          background: rgba(255, 255, 255, 0.1);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          transition: all 0.3s ease;
+      }
+
+      .social-link:hover {
+          background: var(--secondary);
+          color: var(--text-primary);
+          transform: translateY(-3px);
+      }
+
+      .footer-bottom {
+          background-color: rgba(0, 0, 0, 0.2);
+          padding: var(--spacing-md) 0;
+          text-align: center;
+      }
+
+      .copyright {
+          opacity: 0.7;
+          font-size: 0.9rem;
+      }
+
+      /* Mobile Menu */
+      .mobile-menu {
+          position: fixed;
+          top: 0;
+          right: -100%;
+          width: 300px;
+          height: 100vh;
+          background: white;
+          box-shadow: var(--shadow-xl);
+          z-index: 1000;
+          transition: all 0.3s ease;
+          padding: var(--spacing-2xl) var(--spacing-lg);
+          overflow-y: auto;
+      }
+
+      .mobile-menu.open {
+          right: 0;
+      }
+
+      .mobile-menu-header {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-bottom: var(--spacing-xl);
+      }
+
+      .close-menu {
+          background: none;
+          border: none;
+          font-size: 1.5rem;
+          color: var(--text-secondary);
+      }
+
+      .mobile-nav-items {
+          display: flex;
+          flex-direction: column;
+          gap: var(--spacing-md);
+      }
+
+      .mobile-nav-item {
+          padding: var(--spacing-sm) 0;
+          border-bottom: 1px solid var(--background-dark);
+          color: var(--text-primary);
+          font-weight: 500;
+      }
+
+      .mobile-menu-footer {
+          margin-top: var(--spacing-xl);
+          padding-top: var(--spacing-xl);
+          border-top: 1px solid var(--background-dark);
+      }
+
+      /* Overlay */
+      .overlay {
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background: rgba(0, 0, 0, 0.5);
+          z-index: 999;
+          opacity: 0;
+          visibility: hidden;
+          transition: all 0.3s ease;
+      }
+
+      .overlay.active {
+          opacity: 1;
+          visibility: visible;
+      }
+
+      /* Responsive Styles */
+      @media (max-width: 768px) {
+          .nav-items {
+              display: none;
+          }
+          
+          .mobile-menu-btn {
+              display: block;
+          }
+          
+          .section-title {
+              font-size: 2rem;
+          }
+          
+          .search-bar {
+              flex-direction: column;
+              border-radius: var(--border-radius-lg);
+          }
+          
+          .search-input {
+              border-radius: var(--border-radius-lg) var(--border-radius-lg) 0 0;
+              padding: var(--spacing-md);
+          }
+          
+          .search-button {
+              border-radius: 0 0 var(--border-radius-lg) var(--border-radius-lg);
+              padding: var(--spacing-md);
+          }
+          
+          .filters {
+              flex-direction: column;
+              align-items: flex-start;
+          }
+      }
+
+      @media (max-width: 576px) {
+          .section {
+              padding: var(--spacing-2xl) 0;
+          }
+          
+          .section-title {
+              font-size: 1.8rem;
+          }
+          
+          .container {
+              padding: 0 var(--spacing-md);
+          }
+          
+          .logo-text {
+              display: none;
+          }
+      }
+  </style>
+</head>
+
+<body>
+  <!-- ========== HEADER ========== -->
+  <header id="header">
+     <div class="container header-container">
+            <a href="index.html" class="logo">
+                
+                
+                  <img 
+            src="./Icon365.PNG" 
+            alt="አስቤዛ 365 Logo" 
+            class="logo-icon" 
+            width="100" 
+            height="80"
+        >
+            </a>
+
+      <nav class="nav-items">
+        <a href="../index.html" class="nav-item">Home</a>
+        <a href="../System/Shops.html" class="nav-item">Shops</a>
+        <a href="../System/Products.html" class="nav-item active">Products</a>
+        <a href="../system/deals.html" class="nav-item">Deals</a>
+        <a href="../System/About.html" class="nav-item">About</a>
+        <a href="../system/Contacts.html" class="nav-item">Contact</a>
+        <a href="../System/Other Pages.html" class="nav-item">Become a Delivery Man/Woman</a>
+      </nav>
+
+      <div class="header-right">
+        <div class="language-switcher">
+          <button class="language-btn">
+            <span class="language-flag">🇬🇧</span>
+            <span>EN</span>
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="language-dropdown">
+            <div class="language-option" data-lang="en">🇬🇧 English</div>
+            <div class="language-option" data-lang="am">🇪🇹 አማርኛ</div>
+            <div class="language-option" data-lang="om">🇪🇹 Afaan Oromoo</div>
+            <div class="language-option" data-lang="ti">🇪🇹 ትግርኛ</div>
+          </div>
+        </div>
+
+        <a href="cart.html" class="nav-item">
+          <i class="fas fa-shopping-cart"></i>
+          <span class="cart-count">0</span>
+        </a>
+        <a href="../System/Login.html" class="auth-button">Login</a>
+        <button class="mobile-menu-btn" id="mobileMenuBtn"><i class="fas fa-bars"></i></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========== MOBILE MENU ========== -->
+  <div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-menu-header">
+      <div class="logo">
+        <span class="logo-icon">🛒</span>
+        <span class="logo-text">Asbeza365</span>
+      </div>
+      <button class="close-menu" id="closeMenu">
+        <i class="fas fa-times"></i>
+      </button>
+    </div>
+    <nav class="mobile-nav-items">
+      <a href="../index.html" class="mobile-nav-item">Home</a>
+      <a href="../System/Shops.html" class="mobile-nav-item">Shops</a>
+      <a href="../System/Products.html" class="mobile-nav-item active">Products</a>
+      <a href="../system/deals.html" class="mobile-nav-item">Deals</a>
+      <a href="../System/About.html" class="mobile-nav-item">About</a>
+      <a href="../system/Contacts.html" class="mobile-nav-item">Contact</a>
+      <a href="../System/Other Pages.html" class="mobile-nav-item">Become a Delivery Man/Woman</a>
+    </nav>
+    <div class="mobile-menu-footer">
+      <div class="language-switcher">
+          <button class="language-btn" style="width: 100%; justify-content: center;">
+              <span class="language-flag">🇬🇧</span>
+              <span>English</span>
+              <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="language-dropdown" style="position: relative; top: 0; right: auto; width: 100%; margin-top: var(--spacing-sm);">
+              <div class="language-option" data-lang="en">🇬🇧 English</div>
+              <div class="language-option" data-lang="am">🇪🇹 አማርኛ</div>
+              <div class="language-option" data-lang="om">🇪🇹 Afaan Oromoo</div>
+              <div class="language-option" data-lang="ti">🇪🇹 ትግርኛ</div>
+          </div>
+      </div>
+      <a href="../System/Login.html" class="btn btn-primary" style="width: 100%; margin-top: var(--spacing-lg);">
+          Login / Register
+      </a>
+    </div>
+  </div>
+
+  <div class="overlay" id="overlay"></div>
+
+  <!-- ========== MAIN CONTENT ========== -->
+  <main class="section">
+    <div class="container">
+      <h1 class="section-title">Our Products</h1>
+      <p class="text-center">Browse through our extensive collection of grocery products</p>
+      
+      <div class="search-bar">
+        <input type="text" class="search-input" placeholder="Search for products...">
+        <button class="search-button">
+          <i class="fas fa-search"></i> Search
+        </button>
+      </div>
+      
+      <div class="filters">
+        <div class="filter-group">
+          <span class="filter-label">Category:</span>
+          <select class="filter-select">
+            <option>All Categories</option>
+            <option>Staples & Grains</option>
+            <option>Dairy & Eggs</option>
+            <option>Meat & Poultry</option>
+            <option>Fruits & Vegetables</option>
+            <option>Beverages</option>
+            <option>Snacks</option>
+          </select>
+        </div>
+        
+        <div class="filter-group">
+          <span class="filter-label">Sort by:</span>
+          <select class="filter-select">
+            <option>Featured</option>
+            <option>Price: Low to High</option>
+            <option>Price: High to Low</option>
+            <option>Alphabetical</option>
+            <option>Newest</option>
+          </select>
+        </div>
+      </div>
+      
+      <div class="products-grid">
+        <!-- Product 1 -->
+        <div class="product-card fade-in" style="animation-delay: 0.1s;">
+          <div class="product-badge">Sale</div>
+          <div class="product-image-container">
+            <img src="images/teff.PNG" alt="Teff Flour" class="product-image">
+          </div>
+          <div class="product-content">
+            <h3 class="product-title">Organic Teff Flour (5kg)</h3>
+            <div class="product-price">
+              <div>
+                <span class="price-current">2500 ETB</span>
+                <span class="price-original">5000 ETB</span>
+              </div>
+              <span class="product-discount">-50%</span>
+            </div>
+            <div class="product-actions">
+              <button class="product-btn product-btn-primary">
+                <i class="fas fa-cart-plus"></i> Add
+              </button>
+              <button class="product-btn product-btn-secondary">
+                <i class="fas fa-exchange-alt"></i> Compare
+              </button>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Product 2 -->
+        <div class="product-card fade-in" style="animation-delay: 0.2s;">
+          <div class="product-badge">Popular</div>
+          <div class="product-image-container">
+            <img src="images/ev olive oil.PNG" alt="Olive Oil" class="product-image">
+          </div>
+          <div class="product-content">
+            <h3 class="product-title">Extra Virgin Olive Oil (1L)</h3>
+            <div class="product-price">
+              <div>
+                <span class="price-current">1450 ETB</span>
+              </div>
+            </div>
+            <div class="product-actions">
+              <button class="product-btn product-btn-primary">
+                <i class="fas fa-cart-plus"></i> Add
+              </button>
+              <button class="product-btn product-btn-secondary">
+                <i class="fas fa-exchange-alt"></i> Compare
+              </button>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Product 3 -->
+        <div class="product-card fade-in" style="animation-delay: 0.3s;">
+          <div class="product-image-container">
+            <img src="images/honey.PNG" alt="Honey" class="product-image">
+          </div>
+          <div class="product-content">
+            <h3 class="product-title">Pure Ethiopian Honey (500g)</h3>
+            <div class="product-price">
+              <div>
+                <span class="price-current">3600 ETB</span>
+                <span class="price-original">4000 ETB</span>
+              </div>
+              <span class="product-discount">-10%</span>
+            </div>
+            <div class="product-actions">
+              <button class="product-btn product-btn-primary">
+                <i class="fas fa-cart-plus"></i> Add
+              </button>
+              <button class="product-btn product-btn-secondary">
+                <i class="fas fa-exchange-alt"></i> Compare
+              </button>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Product 4 -->
+        <div class="product-card fade-in" style="animation-delay: 0.4s;">
+          <div class="product-badge">New</div>
+          <div class="product-image-container">
+            <img src="images/coffee.PNG" alt="Coffee" class="product-image">
+          </div>
+          <div class="product-content">
+            <h3 class="product-title">Yirgacheffe Coffee (250g)</h3>
+            <div class="product-price">
+              <div>
+                <span class="price-current">795 ETB</span>
+              </div>
+            </div>
+            <div class="product-actions">
+              <button class="product-btn product-btn-primary">
+                <i class="fas fa-cart-plus"></i> Add
+              </button>
+              <button class="product-btn product-btn-secondary">
+                <i class="fas fa-exchange-alt"></i> Compare
+              </button>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Product 5 -->
+        <div class="product-card fade-in" style="animation-delay: 0.5s;">
+          <div class="product-image-container">
+            <img src="images/staples and greens.PNG" alt="Rice" class="product-image">
+          </div>
+          <div class="product-content">
+            <h3 class="product-title">Premium Basmati Rice (5kg)</h3>
+            <div class="product-price">
+              <div>
+                <span class="price-current">1200 ETB</span>
+                <span class="price-original">1500 ETB</span>
+              </div>
+              <span class="product-discount">-20%</span>
+            </div>
+            <div class="product-actions">
+              <button class="product-btn product-btn-primary">
+                <i class="fas fa-cart-plus"></i> Add
+              </button>
+              <button class="product-btn product-btn-secondary">
+                <i class="fas fa-exchange-alt"></i> Compare
+              </button>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Product 6 -->
+        <div class="product-card fade-in" style="animation-delay: 0.6s;">
+          <div class="product-badge">Best Seller</div>
+          <div class="product-image-container">
+            <img src="images/Milk and Dairy.PNG" alt="Milk" class="product-image">
+          </div>
+          <div class="product-content">
+            <h3 class="product-title">Fresh Whole Milk (1L)</h3>
+            <div class="product-price">
+              <div>
+                <span class="price-current">45 ETB</span>
+              </div>
+            </div>
+            <div class="product-actions">
+              <button class="product-btn product-btn-primary">
+                <i class="fas fa-cart-plus"></i> Add
+              </button>
+              <button class="product-btn product-btn-secondary">
+                <i class="fas fa-exchange-alt"></i> Compare
+              </button>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Product 7 -->
+        <div class="product-card fade-in" style="animation-delay: 0.7s;">
+          <div class="product-image-container">
+            <img src="images/Meat and Poultry.PNG" alt="Chicken" class="product-image">
+          </div>
+          <div class="product-content">
+            <h3 class="product-title">Fresh Whole Chicken (1kg)</h3>
+            <div class="product-price">
+              <div>
+                <span class="price-current">250 ETB</span>
+              </div>
+            </div>
+            <div class="product-actions">
+              <button class="product-btn product-btn-primary">
+                <i class="fas fa-cart-plus"></i> Add
+              </button>
+              <button class="product-btn product-btn-secondary">
+                <i class="fas fa-exchange-alt"></i> Compare
+              </button>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Product 8 -->
+        <div class="product-card fade-in" style="animation-delay: 0.8s;">
+          <div class="product-badge">Limited</div>
+          <div class="product-image-container">
+            <img src="images/Fruits and Vegetables.PNG" alt="Tomatoes" class="product-image">
+          </div>
+          <div class="product-content">
+            <h3 class="product-title">Fresh Tomatoes (1kg)</h3>
+            <div class="product-price">
+              <div>
+                <span class="price-current">60 ETB</span>
+                <span class="price-original">80 ETB</span>
+              </div>
+              <span class="product-discount">-25%</span>
+            </div>
+            <div class="product-actions">
+              <button class="product-btn product-btn-primary">
+                <i class="fas fa-cart-plus"></i> Add
+              </button>
+              <button class="product-btn product-btn-secondary">
+                <i class="fas fa-exchange-alt"></i> Compare
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="text-center" style="margin-top: var(--spacing-2xl);">
+        <button class="btn btn-primary">
+          Load More Products <i class="fas fa-arrow-down"></i>
+        </button>
+      </div>
+    </div>
+  </main>
+<script>
+  // Product data
+  const products = [
+    {
+      id: 1,
+      name: "Organic Teff Flour (5kg)",
+      category: "Staples & Grains",
+      price: 2500,
+      originalPrice: 5000,
+      image: "./teff.PNG",
+      badge: "Sale",
+      isNew: false,
+      isFeatured: true
+    },
+    {
+      id: 2,
+      name: "Extra Virgin Olive Oil (1L)",
+      category: "Staples & Grains",
+      price: 1450,
+      originalPrice: 1450,
+      image: "./ev olive oil.PNG",
+      badge: "Popular",
+      isNew: false,
+      isFeatured: true
+    },
+    {
+      id: 3,
+      name: "Pure Ethiopian Honey (500g)",
+      category: "Staples & Grains",
+      price: 3600,
+      originalPrice: 4000,
+      image: "./honey.PNG",
+      badge: "",
+      isNew: false,
+      isFeatured: true
+    },
+    {
+      id: 4,
+      name: "Yirgacheffe Coffee (250g)",
+      category: "Beverages",
+      price: 795,
+      originalPrice: 795,
+      image: "./coffee.PNG",
+      badge: "New",
+      isNew: true,
+      isFeatured: false
+    },
+    {
+      id: 5,
+      name: "Premium Basmati Rice (5kg)",
+      category: "Staples & Grains",
+      price: 1200,
+      originalPrice: 1500,
+      image: "./staples and greens.PNG",
+      badge: "",
+      isNew: false,
+      isFeatured: false
+    },
+    {
+      id: 6,
+      name: "Fresh Whole Milk (1L)",
+      category: "Dairy & Eggs",
+      price: 45,
+      originalPrice: 45,
+      image: "./Milk and Dairy.PNG",
+      badge: "Best Seller",
+      isNew: false,
+      isFeatured: true
+    },
+    {
+      id: 7,
+      name: "Fresh Whole Chicken (1kg)",
+      category: "Meat & Poultry",
+      price: 250,
+      originalPrice: 250,
+      image: "./Meat and Poultry.PNG",
+      badge: "",
+      isNew: false,
+      isFeatured: false
+    },
+    {
+      id: 8,
+      name: "Fresh Tomatoes (1kg)",
+      category: "Fruits & Vegetables",
+      price: 60,
+      originalPrice: 80,
+      image: "./Fruits and Vegetables.PNG",
+      badge: "Limited",
+      isNew: false,
+      isFeatured: false
+    },
+    {
+      id: 9,
+      name: "Free Range Eggs (30 pieces)",
+      category: "Dairy & Eggs",
+      price: 180,
+      originalPrice: 200,
+      image: "./eggs.PNG",
+      badge: "",
+      isNew: true,
+      isFeatured: true
+    },
+    {
+      id: 10,
+      name: "Mineral Water (1L, 12 bottles)",
+      category: "Beverages",
+      price: 240,
+      originalPrice: 240,
+      image: "./water.PNG",
+      badge: "",
+      isNew: false,
+      isFeatured: false
+    }
+  ];
+
+  // DOM Elements
+  const productsGrid = document.querySelector('.products-grid');
+  const categoryFilter = document.querySelector('.filter-select:first-of-type');
+  const sortBy = document.querySelector('.filter-select:last-of-type');
+  const searchInput = document.querySelector('.search-input');
+  const searchButton = document.querySelector('.search-button');
+  const loadMoreBtn = document.querySelector('.btn.btn-primary');
+
+  // Current state
+  let currentPage = 1;
+  const productsPerPage = 8;
+  let filteredProducts = [...products];
+  let displayedProducts = 0;
+
+  // Initialize the page
+  function init() {
+    renderProducts();
+    setupEventListeners();
+  }
+
+  // Set up event listeners
+  function setupEventListeners() {
+    categoryFilter.addEventListener('change', filterProducts);
+    sortBy.addEventListener('change', filterProducts);
+    searchInput.addEventListener('input', filterProducts);
+    searchButton.addEventListener('click', filterProducts);
+    if (loadMoreBtn) {
+      loadMoreBtn.addEventListener('click', loadMoreProducts);
+    }
+  }
+
+  // Filter and sort products
+  function filterProducts() {
+    const category = categoryFilter.value;
+    const searchTerm = searchInput.value.toLowerCase();
+    const sortOption = sortBy.value;
+
+    // Filter by category and search term
+    filteredProducts = products.filter(product => {
+      const matchesCategory = category === 'All Categories' || product.category === category;
+      const matchesSearch = product.name.toLowerCase().includes(searchTerm) || 
+                           product.category.toLowerCase().includes(searchTerm);
+      return matchesCategory && matchesSearch;
+    });
+
+    // Sort products
+    switch(sortOption) {
+      case 'Price: Low to High':
+        filteredProducts.sort((a, b) => a.price - b.price);
+        break;
+      case 'Price: High to Low':
+        filteredProducts.sort((a, b) => b.price - a.price);
+        break;
+      case 'Alphabetical':
+        filteredProducts.sort((a, b) => a.name.localeCompare(b.name));
+        break;
+      case 'Newest':
+        filteredProducts.sort((a, b) => b.isNew - a.isNew);
+        break;
+      case 'Featured':
+      default:
+        filteredProducts.sort((a, b) => b.isFeatured - a.isFeatured);
+    }
+
+    currentPage = 1;
+    renderProducts();
+  }
+
+  // Render products to the grid
+  function renderProducts() {
+    productsGrid.innerHTML = '';
+    displayedProducts = 0;
+    loadMoreProducts();
+  }
+
+  // Load more products (pagination)
+  function loadMoreProducts() {
+    const startIndex = (currentPage - 1) * productsPerPage;
+    const endIndex = startIndex + productsPerPage;
+    const productsToShow = filteredProducts.slice(displayedProducts, displayedProducts + productsPerPage);
+
+    if (productsToShow.length === 0) {
+      if (loadMoreBtn) loadMoreBtn.style.display = 'none';
+      if (filteredProducts.length === 0) {
+        productsGrid.innerHTML = '<p class="text-center" style="grid-column: 1/-1; padding: var(--spacing-xl) 0;">No products found matching your criteria.</p>';
+      }
+      return;
+    }
+
+    productsToShow.forEach((product, index) => {
+      const productCard = createProductCard(product, displayedProducts + index);
+      productsGrid.appendChild(productCard);
+    });
+
+    displayedProducts += productsToShow.length;
+    currentPage++;
+
+    if (loadMoreBtn) {
+      if (displayedProducts >= filteredProducts.length) {
+        loadMoreBtn.style.display = 'none';
+      } else {
+        loadMoreBtn.style.display = 'inline-block';
+      }
+    }
+  }
+
+  // Create product card HTML
+  function createProductCard(product, index) {
+    const discount = product.originalPrice > product.price 
+      ? Math.round(((product.originalPrice - product.price) / product.originalPrice) * 100)
+      : 0;
+
+    const card = document.createElement('div');
+    card.className = `product-card fade-in`;
+    card.style.animationDelay = `${(index % 8) * 0.1}s`;
+    card.innerHTML = `
+      ${product.badge ? `<div class="product-badge">${product.badge}</div>` : ''}
+      <div class="product-image-container">
+        <img src="${product.image}" alt="${product.name}" class="product-image">
+      </div>
+      <div class="product-content">
+        <h3 class="product-title">${product.name}</h3>
+        <div class="product-price">
+          <div>
+            <span class="price-current">${product.price} ETB</span>
+            ${product.originalPrice > product.price 
+              ? `<span class="price-original">${product.originalPrice} ETB</span>` 
+              : ''}
+          </div>
+          ${discount > 0 ? `<span class="product-discount">-${discount}%</span>` : ''}
+        </div>
+        <div class="product-actions">
+          <button class="product-btn product-btn-primary">
+            <i class="fas fa-cart-plus"></i> Add
+          </button>
+          <button class="product-btn product-btn-secondary">
+            <i class="fas fa-exchange-alt"></i> Compare
+          </button>
+        </div>
+      </div>
+    `;
+
+    // Add click event for the Add to Cart button
+    const addToCartBtn = card.querySelector('.product-btn-primary');
+    addToCartBtn.addEventListener('click', () => addToCart(product));
+
+    return card;
+  }
+
+  // Add to cart function
+  function addToCart(product) {
+    const notification = document.createElement('div');
+    notification.style.position = 'fixed';
+    notification.style.bottom = '20px';
+    notification.style.right = '20px';
+    notification.style.backgroundColor = 'var(--primary)';
+    notification.style.color = 'white';
+    notification.style.padding = 'var(--spacing-md) var(--spacing-lg)';
+    notification.style.borderRadius = 'var(--border-radius-md)';
+    notification.style.boxShadow = 'var(--shadow-lg)';
+    notification.style.zIndex = '1000';
+    notification.style.display = 'flex';
+    notification.style.alignItems = 'center';
+    notification.style.gap = 'var(--spacing-sm)';
+    notification.style.animation = 'slideUp 0.3s ease forwards';
+    notification.innerHTML = `
+      <i class="fas fa-check-circle"></i>
+      Added to cart: ${product.name} - ${product.price} ETB
+    `;
+    
+    document.body.appendChild(notification);
+    
+    setTimeout(() => {
+      notification.style.animation = 'fadeOut 0.3s ease forwards';
+      setTimeout(() => notification.remove(), 300);
+    }, 3000);
+    
+    // Update cart count
+    const cartCount = document.querySelector('.cart-count');
+    if (cartCount) {
+      const currentCount = parseInt(cartCount.textContent) || 0;
+      cartCount.textContent = currentCount + 1;
+      
+      // Add animation
+      cartCount.style.transform = 'scale(1.5)';
+      setTimeout(() => {
+        cartCount.style.transform = 'scale(1)';
+      }, 300);
+    }
+  }
+
+  // Initialize the page
+  document.addEventListener('DOMContentLoaded', init);
+</script>
+  <!-- ========== FOOTER ========== -->
+  <footer>
+    <div class="container">
+      <div class="footer-container">
+        <div class="footer-column footer-about">
+          <h3>Asbeza365</h3>
+          <p>Your ultimate grocery price comparison platform in Addis Ababa. Save money on every purchase with our smart shopping tools.</p>
+          <div class="social-links">
+            <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-telegram"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+        
+        <div class="footer-column">
+          <h3>Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="index.html" class="footer-link"><i class="fas fa-chevron-right"></i> Home</a></li>
+            <li><a href="shops.html" class="footer-link"><i class="fas fa-chevron-right"></i> Shops</a></li>
+            <li><a href="products.html" class="footer-link"><i class="fas fa-chevron-right"></i> Products</a></li>
+            <li><a href="deals.html" class="footer-link"><i class="fas fa-chevron-right"></i> Deals</a></li>
+            <li><a href="about.html" class="footer-link"><i class="fas fa-chevron-right"></i> About Us</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-column">
+          <h3>Customer Service</h3>
+          <ul class="footer-links">
+            <li><a href="faq.html" class="footer-link"><i class="fas fa-chevron-right"></i> FAQ</a></li>
+            <li><a href="contact.html" class="footer-link"><i class="fas fa-chevron-right"></i> Contact Us</a></li>
+            <li><a href="privacy.html" class="footer-link"><i class="fas fa-chevron-right"></i> Privacy Policy</a></li>
+            <li><a href="terms.html" class="footer-link"><i class="fas fa-chevron-right"></i> Terms of Service</a></li>
+            <li><a href="shipping.html" class="footer-link"><i class="fas fa-chevron-right"></i> Shipping & Returns</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-column">
+          <h3>Contact Info</h3>
+          <ul class="footer-links">
+            <li><a href="#" class="footer-link"><i class="fas fa-map-marker-alt"></i> Bole Road, Addis Ababa, Ethiopia</a></li>
+            <li><a href="tel:+251934592679" class="footer-link"><i class="fas fa-phone"></i> +251 934592679</a></li>
+            <li><a href="mailto:info@asbeza365.com" class="footer-link"><i class="fas fa-envelope"></i> info@asbeza365.com</a></li>
+            <li><a href="#" class="footer-link"><i class="fas fa-clock"></i> Mon-Sat: 8AM - 8PM</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p class="copyright">&copy; 2025 Asbeza365. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  
+  <!-- Main JavaScript -->
+  <script>
+      // Mobile Menu Toggle
+      const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+      const closeMenu = document.getElementById('closeMenu');
+      const mobileMenu = document.getElementById('mobileMenu');
+      const overlay = document.getElementById('overlay');
+
+      mobileMenuBtn.addEventListener('click', () => {
+          mobileMenu.classList.add('open');
+          overlay.classList.add('active');
+          document.body.style.overflow = 'hidden';
+      });
+
+      closeMenu.addEventListener('click', () => {
+          mobileMenu.classList.remove('open');
+          overlay.classList.remove('active');
+          document.body.style.overflow = '';
+      });
+
+      overlay.addEventListener('click', () => {
+          mobileMenu.classList.remove('open');
+          overlay.classList.remove('active');
+          document.body.style.overflow = '';
+      });
+
+      // Header Scroll Effect
+      const header = document.getElementById('header');
+      window.addEventListener('scroll', () => {
+          if (window.scrollY > 50) {
+              header.classList.add('scrolled');
+          } else {
+              header.classList.remove('scrolled');
+          }
+      });
+
+      // Language Configuration
+      const languageConfig = {
+          en: {
+              addToCart: "Add to Cart",
+              compare: "Compare",
+              nav: {
+                  home: "Home",
+                  shops: "Shops",
+                  products: "Products",
+                  deals: "Deals",
+                  about: "About",
+                  contact: "Contact",
+                  profile: "Profile",
+                  login: "Login",
+                  logout: "Logout"
+              }
+          },
+          am: {
+              addToCart: "ወደ ጋሪ ጨምር",
+              compare: "አወዳድር",
+              nav: {
+                  home: "መነሻ",
+                  shops: "መደብሮች",
+                  products: "ምርቶች",
+                  deals: "ቅናሾች",
+                  about: "ስለ እኛ",
+                  contact: "አግኙን",
+                  profile: "መገለጫ",
+                  login: "ግባ",
+                  logout: "ውጣ"
+              }
+          },
+          om: {
+              addToCart: "Gaaritti Dabaladhu",
+              compare: "Walitti Makuu",
+              nav: {
+                  home: "Mana",
+                  shops: "Dukaanota",
+                  products: "Oomishaalee",
+                  deals: "Qaallii",
+                  about: "Waa'ee keenya",
+                  contact: "Nu qunnamtii",
+                  profile: "Seenaa",
+                  login: "Seensa",
+                  logout: "Ba'i"
+              }
+          },
+          ti: {
+              addToCart: "ናብ ጋሪ ወስኽ",
+              compare: "ኣወዳድር",
+              nav: {
+                  home: "ቤት",
+                  shops: "ድኳን",
+                  products: "ዕረፍቲ",
+                  deals: "ሽምጥል",
+                  about: "ብዛዕባና",
+                  contact: "ርኸቡና",
+                  profile: "መግለጺ",
+                  login: "እቶ",
+                  logout: "ውጻእ"
+              }
+          }
+      };
+
+      // Current language
+      let currentLanguage = 'en';
+      const dirRTL = ['am', 'ti'];
+
+      // DOM Elements
+      const languageOptions = document.querySelectorAll('.language-option');
+      const languageBtn = document.querySelector('.language-btn');
+      const htmlElement = document.documentElement;
+
+      // Set language
+      function setLanguage(lang) {
+          currentLanguage = lang;
+          
+          // Update HTML direction
+          if (dirRTL.includes(lang)) {
+              htmlElement.dir = 'rtl';
+              htmlElement.classList.add('rtl');
+          } else {
+              htmlElement.dir = 'ltr';
+              htmlElement.classList.remove('rtl');
+          }
+          
+          // Update language button
+          const langData = {
+              en: { flag: '🇬🇧', name: 'EN' },
+              am: { flag: '🇪🇹', name: 'AM' },
+              om: { flag: '🇪🇹', name: 'OM' },
+              ti: { flag: '🇪🇹', name: 'TI' }
+          };
+          
+          languageBtn.innerHTML = `
+              <span class="language-flag">${langData[lang].flag}</span>
+              <span>${langData[lang].name}</span>
+              <i class="fas fa-chevron-down"></i>
+          `;
+          
+          // Translate navigation items
+          const navItems = document.querySelectorAll('.nav-item:not(.auth-button)');
+          if (navItems.length > 0) {
+              navItems.forEach(item => {
+                  const key = item.textContent.trim().toLowerCase();
+                  if (languageConfig[lang].nav[key]) {
+                      item.textContent = languageConfig[lang].nav[key];
+                  }
+              });
+          }
+          
+          // Translate mobile menu items
+          const mobileNavItems = document.querySelectorAll('.mobile-nav-item');
+          mobileNavItems.forEach(item => {
+              const key = item.textContent.trim().toLowerCase();
+              if (languageConfig[lang].nav[key]) {
+                  item.textContent = languageConfig[lang].nav[key];
+              }
+          });
+          
+          // Update product buttons
+          document.querySelectorAll('.product-btn-primary').forEach(btn => {
+              btn.innerHTML = `<i class="fas fa-cart-plus"></i> ${languageConfig[lang].addToCart}`;
+          });
+          
+          document.querySelectorAll('.product-btn-secondary').forEach(btn => {
+              btn.innerHTML = `<i class="fas fa-exchange-alt"></i> ${languageConfig[lang].compare}`;
+          });
+      }
+
+      // Language switcher event listeners
+      languageOptions.forEach(option => {
+          option.addEventListener('click', () => {
+              const lang = option.getAttribute('data-lang');
+              setLanguage(lang);
+              
+              // Close dropdown after selection
+              document.querySelector('.language-dropdown').style.display = 'none';
+          });
+      });
+
+      // Close dropdown when clicking outside
+      document.addEventListener('click', (e) => {
+          if (!e.target.closest('.language-switcher')) {
+              document.querySelector('.language-dropdown').style.display = 'none';
+          }
+      });
+
+      // Initialize with English
+      setLanguage('en');
+
+      // Add to cart functionality
+      const addToCartButtons = document.querySelectorAll('.product-btn-primary');
+      
+      addToCartButtons.forEach(button => {
+          button.addEventListener('click', () => {
+              const productCard = button.closest('.product-card');
+              const productTitle = productCard.querySelector('.product-title').textContent;
+              const productPrice = productCard.querySelector('.price-current').textContent;
+              
+              // Create a nice notification
+              const notification = document.createElement('div');
+              notification.style.position = 'fixed';
+              notification.style.bottom = '20px';
+              notification.style.right = '20px';
+              notification.style.backgroundColor = 'var(--primary)';
+              notification.style.color = 'white';
+              notification.style.padding = 'var(--spacing-md) var(--spacing-lg)';
+              notification.style.borderRadius = 'var(--border-radius-md)';
+              notification.style.boxShadow = 'var(--shadow-lg)';
+              notification.style.zIndex = '1000';
+              notification.style.display = 'flex';
+              notification.style.alignItems = 'center';
+              notification.style.gap = 'var(--spacing-sm)';
+              notification.style.animation = 'slideUp 0.3s ease forwards';
+              notification.innerHTML = `
+                  <i class="fas fa-check-circle"></i>
+                  ${languageConfig[currentLanguage].addToCart}: ${productTitle} - ${productPrice}
+              `;
+              
+              document.body.appendChild(notification);
+              
+              // Remove after 3 seconds
+              setTimeout(() => {
+                  notification.style.animation = 'fadeOut 0.3s ease forwards';
+                  setTimeout(() => notification.remove(), 300);
+              }, 3000);
+              
+              // Update cart count
+              const cartCount = document.querySelector('.cart-count');
+              if (cartCount) {
+                  const currentCount = parseInt(cartCount.textContent) || 0;
+                  cartCount.textContent = currentCount + 1;
+                  
+                  // Add animation
+                  cartCount.style.transform = 'scale(1.5)';
+                  setTimeout(() => {
+                      cartCount.style.transform = 'scale(1)';
+                  }, 300);
+              }
+          });
+      });
+
+      // Animation on scroll
+      const animateOnScroll = () => {
+          const elements = document.querySelectorAll('.fade-in, .slide-up');
+          
+          elements.forEach(element => {
+              const elementPosition = element.getBoundingClientRect().top;
+              const screenPosition = window.innerHeight / 1.2;
+              
+              if (elementPosition < screenPosition) {
+                  element.style.opacity = '1';
+                  element.style.transform = 'translateY(0)';
+              }
+          });
+      };
+
+      // Run once on load
+      animateOnScroll();
+      
+      // Run on scroll
+      window.addEventListener('scroll', animateOnScroll);
+  </script>
+  <!-- JavaScript -->
+  <script>
+    // Product data
+    const products = [
+      {
+        id: 1,
+        name: "Organic Teff Flour (5kg)",
+        category: "staples",
+        price: 2500,
+        originalPrice: 5000,
+        image: "images/teff.PNG",
+        badge: "Sale",
+        isNew: false,
+        isFeatured: true
+      },
+      {
+        id: 2,
+        name: "Extra Virgin Olive Oil (1L)",
+        category: "staples",
+        price: 1450,
+        originalPrice: 1450,
+        image: "images/ev olive oil.PNG",
+        badge: "Popular",
+        isNew: false,
+        isFeatured: true
+      },
+      {
+        id: 3,
+        name: "Pure Ethiopian Honey (500g)",
+        category: "staples",
+        price: 3600,
+        originalPrice: 4000,
+        image: "images/honey.PNG",
+        badge: "",
+        isNew: false,
+        isFeatured: true
+      },
+      {
+        id: 4,
+        name: "Yirgacheffe Coffee (250g)",
+        category: "beverages",
+        price: 795,
+        originalPrice: 795,
+        image: "images/coffee.PNG",
+        badge: "New",
+        isNew: true,
+        isFeatured: false
+      },
+      {
+        id: 5,
+        name: "Premium Basmati Rice (5kg)",
+        category: "staples",
+        price: 1200,
+        originalPrice: 1500,
+        image: "images/staples and greens.PNG",
+        badge: "",
+        isNew: false,
+        isFeatured: false
+      },
+      {
+        id: 6,
+        name: "Fresh Whole Milk (1L)",
+        category: "dairy",
+        price: 45,
+        originalPrice: 45,
+        image: "images/Milk and Dairy.PNG",
+        badge: "Best Seller",
+        isNew: false,
+        isFeatured: true
+      },
+      {
+        id: 7,
+        name: "Fresh Whole Chicken (1kg)",
+        category: "meat",
+        price: 250,
+        originalPrice: 250,
+        image: "images/Meat and Poultry.PNG",
+        badge: "",
+        isNew: false,
+        isFeatured: false
+      },
+      {
+        id: 8,
+        name: "Fresh Tomatoes (1kg)",
+        category: "produce",
+        price: 60,
+        originalPrice: 80,
+        image: "images/Fruits and Vegetables.PNG",
+        badge: "Limited",
+        isNew: false,
+        isFeatured: false
+      },
+      {
+        id: 9,
+        name: "Free Range Eggs (30 pieces)",
+        category: "dairy",
+        price: 180,
+        originalPrice: 200,
+        image: "images/eggs.PNG",
+        badge: "",
+        isNew: true,
+        isFeatured: true
+      },
+      {
+        id: 10,
+        name: "Mineral Water (1L, 12 bottles)",
+        category: "beverages",
+        price: 240,
+        originalPrice: 240,
+        image: "images/water.PNG",
+        badge: "",
+        isNew: false,
+        isFeatured: false
+      }
+    ];
+
+    // DOM Elements
+    const productsGrid = document.getElementById('productsGrid');
+    const categoryFilter = document.getElementById('categoryFilter');
+    const sortBy = document.getElementById('sortBy');
+    const searchInput = document.getElementById('searchInput');
+    const searchButton = document.getElementById('searchButton');
+    const loadMore = document.getElementById('loadMore');
+
+    // Current state
+    let currentPage = 1;
+    const productsPerPage = 8;
+    let filteredProducts = [...products];
+    let displayedProducts = 0;
+
+    // Initialize the page
+    function init() {
+      renderProducts();
+      setupEventListeners();
+    }
+
+    // Set up event listeners
+    function setupEventListeners() {
+      categoryFilter.addEventListener('change', filterProducts);
+      sortBy.addEventListener('change', filterProducts);
+      searchInput.addEventListener('input', filterProducts);
+      searchButton.addEventListener('click', filterProducts);
+      loadMore.addEventListener('click', loadMoreProducts);
+    }
+
+    // Filter and sort products
+    function filterProducts() {
+      const category = categoryFilter.value;
+      const searchTerm = searchInput.value.toLowerCase();
+      const sortOption = sortBy.value;
+
+      // Filter by category
+      filteredProducts = products.filter(product => {
+        return (category === 'all' || product.category === category) &&
+               (product.name.toLowerCase().includes(searchTerm));
+      });
+
+      // Sort products
+      switch(sortOption) {
+        case 'price-low':
+          filteredProducts.sort((a, b) => a.price - b.price);
+          break;
+        case 'price-high':
+          filteredProducts.sort((a, b) => b.price - a.price);
+          break;
+        case 'name-asc':
+          filteredProducts.sort((a, b) => a.name.localeCompare(b.name));
+          break;
+        case 'name-desc':
+          filteredProducts.sort((a, b) => b.name.localeCompare(a.name));
+          break;
+        case 'newest':
+          filteredProducts.sort((a, b) => b.isNew - a.isNew);
+          break;
+        case 'featured':
+        default:
+          filteredProducts.sort((a, b) => b.isFeatured - a.isFeatured);
+      }
+
+      currentPage = 1;
+      renderProducts();
+    }
+
+    // Render products to the grid
+    function renderProducts() {
+      productsGrid.innerHTML = '';
+      displayedProducts = 0;
+      loadMoreProducts();
+    }
+
+    // Load more products (pagination)
+    function loadMoreProducts() {
+      const startIndex = (currentPage - 1) * productsPerPage;
+      const endIndex = startIndex + productsPerPage;
+      const productsToShow = filteredProducts.slice(displayedProducts, displayedProducts + productsPerPage);
+
+      if (productsToShow.length === 0) {
+        loadMore.style.display = 'none';
+        if (filteredProducts.length === 0) {
+          productsGrid.innerHTML = '<p class="text-center" style="grid-column: 1/-1; padding: var(--spacing-xl) 0;">No products found matching your criteria.</p>';
+        }
+        return;
+      }
+
+      productsToShow.forEach((product, index) => {
+        const productCard = createProductCard(product, displayedProducts + index);
+        productsGrid.appendChild(productCard);
+      });
+
+      displayedProducts += productsToShow.length;
+      currentPage++;
+
+      if (displayedProducts >= filteredProducts.length) {
+        loadMore.style.display = 'none';
+      } else {
+        loadMore.style.display = 'inline-block';
+      }
+    }
+
+    // Create product card HTML
+    function createProductCard(product, index) {
+      const discount = product.originalPrice > product.price 
+        ? Math.round(((product.originalPrice - product.price) / product.originalPrice) * 100)
+        : 0;
+
+      const card = document.createElement('div');
+      card.className = `product-card fade-in`;
+      card.style.animationDelay = `${(index % 8) * 0.1}s`;
+      card.innerHTML = `
+        ${product.badge ? `<div class="product-badge">${product.badge}</div>` : ''}
+        <div class="product-image-container">
+          <img src="${product.image}" alt="${product.name}" class="product-image">
+        </div>
+        <div class="product-content">
+          <h3 class="product-title">${product.name}</h3>
+          <div class="product-price">
+            <div>
+              <span class="price-current">${product.price} ETB</span>
+              ${product.originalPrice > product.price 
+                ? `<span class="price-original">${product.originalPrice} ETB</span>` 
+                : ''}
+            </div>
+            ${discount > 0 ? `<span class="product-discount">-${discount}%</span>` : ''}
+          </div>
+          <div class="product-actions">
+            <button class="product-btn product-btn-primary">
+              <i class="fas fa-cart-plus"></i> Add
+            </button>
+            <button class="product-btn product-btn-secondary">
+              <i class="fas fa-exchange-alt"></i> Compare
+            </button>
+          </div>
+        </div>
+      `;
+
+      // Add click event for the Add to Cart button
+      const addToCartBtn = card.querySelector('.product-btn-primary');
+      addToCartBtn.addEventListener('click', () => addToCart(product));
+
+      return card;
+    }
+
+    // Add to cart function
+    function addToCart(product) {
+      const notification = document.createElement('div');
+      notification.style.position = 'fixed';
+      notification.style.bottom = '20px';
+      notification.style.right = '20px';
+      notification.style.backgroundColor = 'var(--primary)';
+      notification.style.color = 'white';
+      notification.style.padding = 'var(--spacing-md) var(--spacing-lg)';
+      notification.style.borderRadius = 'var(--border-radius-md)';
+      notification.style.boxShadow = 'var(--shadow-lg)';
+      notification.style.zIndex = '1000';
+      notification.style.display = 'flex';
+      notification.style.alignItems = 'center';
+      notification.style.gap = 'var(--spacing-sm)';
+      notification.style.animation = 'slideUp 0.3s ease forwards';
+      notification.innerHTML = `
+        <i class="fas fa-check-circle"></i>
+        Added to cart: ${product.name} - ${product.price} ETB
+      `;
+      
+      document.body.appendChild(notification);
+      
+      setTimeout(() => {
+        notification.style.animation = 'fadeOut 0.3s ease forwards';
+        setTimeout(() => notification.remove(), 300);
+      }, 3000);
+      
+      // Update cart count
+      const cartCount = document.querySelector('.cart-count');
+      if (cartCount) {
+        const currentCount = parseInt(cartCount.textContent) || 0;
+        cartCount.textContent = currentCount + 1;
+        
+        // Add animation
+        cartCount.style.transform = 'scale(1.5)';
+        setTimeout(() => {
+          cartCount.style.transform = 'scale(1)';
+        }, 300);
+      }
+    }
+
+    // Initialize the page
+    init();
+
+    // Keep all the existing JavaScript from previous implementation
+    // (mobile menu, language switcher, etc.)
+    // ...
+  </script>
+</body>
+</html>

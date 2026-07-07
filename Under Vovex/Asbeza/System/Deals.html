@@ -1,0 +1,2172 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+    <!-- Other meta tags -->
+    
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'GA_MEASUREMENT_ID');
+    </script>
+</head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asbeza365 - Exclusive Grocery Deals</title>
+    <link rel="icon" href="./icon.ico" type="image/x-icon">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Swiper JS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+    
+    <!-- Local Ethiopic Font -->
+    <style>
+        @font-face {
+            font-family: 'Abyssinica SIL';
+            src: url('/fonts/AbyssinicaSIL-Regular.ttf') format('truetype');
+        }
+    </style>
+    <link rel="icon" href="./icon.ico" type="image/x-icon">
+
+    <style>
+        /* CSS Variables */
+        :root {
+            --primary: #056D30;
+            --primary-light: #E8F5E9;
+            --primary-dark: #034D21;
+            --secondary: #F0B429;
+            --secondary-light: #FFF8E1;
+            --secondary-dark: #F57F17;
+            --error: #C12A2A;
+            --success: #2E7D32;
+            --text-primary: #212121;
+            --text-secondary: #757575;
+            --background: #FFFFFF;
+            --background-light: #FAFAFA;
+            --background-dark: #F5F5F5;
+            --shadow-sm: 0 1px 3px rgba(0,0,0,0.12);
+            --shadow-md: 0 4px 6px rgba(0,0,0,0.1);
+            --shadow-lg: 0 10px 20px rgba(0,0,0,0.1);
+            --shadow-xl: 0 20px 40px rgba(0,0,0,0.15);
+            --border-radius-sm: 4px;
+            --border-radius-md: 8px;
+            --border-radius-lg: 12px;
+            --border-radius-xl: 16px;
+            --border-radius-2xl: 24px;
+            --spacing-xs: 4px;
+            --spacing-sm: 8px;
+            --spacing-md: 16px;
+            --spacing-lg: 24px;
+            --spacing-xl: 32px;
+            --spacing-2xl: 48px;
+            --spacing-3xl: 64px;
+        }
+
+        /* Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html[dir="rtl"] {
+            font-family: 'Abyssinica SIL', serif;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            color: var(--text-primary);
+            background-color: var(--background-light);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        button {
+            cursor: pointer;
+            border: none;
+            background: none;
+            font-family: inherit;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Animation */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideUp {
+            from { 
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to { 
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Utility Classes */
+        .container {
+            width: 100%;
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 var(--spacing-xl);
+        }
+
+        .section {
+            padding: var(--spacing-3xl) 0;
+        }
+
+        .section-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: var(--spacing-2xl);
+            color: var(--primary);
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 80px;
+            height: 4px;
+            background: var(--secondary);
+            margin: var(--spacing-md) auto 0;
+            border-radius: 2px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: var(--spacing-sm) var(--spacing-lg);
+            border-radius: var(--border-radius-md);
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .btn-primary {
+            background-color: var(--primary);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background-color: var(--primary-dark);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .btn-secondary {
+            background-color: var(--secondary);
+            color: var(--text-primary);
+        }
+
+        .btn-secondary:hover {
+            background-color: var(--secondary-dark);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .fade-in {
+            animation: fadeIn 0.8s ease forwards;
+        }
+
+        .slide-up {
+            animation: slideUp 0.8s ease forwards;
+        }
+
+        /* Header Styles */
+        header {
+            background-color: var(--primary);
+            color: white;
+            padding: var(--spacing-md) 0;
+            box-shadow: var(--shadow-md);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            transition: all 0.3s ease;
+        }
+
+        header.scrolled {
+            padding: var(--spacing-sm) 0;
+            background-color: rgba(5, 109, 48, 0.95);
+            backdrop-filter: blur(10px);
+        }
+
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-sm);
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: white;
+        }
+
+        .logo-icon {
+            font-size: 2rem;
+            color: var(--secondary);
+        }
+
+        .logo-text {
+            font-family: 'Playfair Display', serif;
+        }
+
+        .nav-items {
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-xl);
+        }
+
+        .nav-item {
+            color: white;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            position: relative;
+            padding: var(--spacing-sm) 0;
+        }
+
+        .nav-item::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: var(--secondary);
+            transition: width 0.3s ease;
+        }
+
+        .nav-item:hover::after {
+            width: 100%;
+        }
+
+        .nav-item:hover {
+            color: var(--secondary-light);
+        }
+
+        .header-right {
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-lg);
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            color: white;
+            font-size: 1.5rem;
+            z-index: 1001;
+        }
+
+        /* Language Switcher */
+        .language-switcher {
+            position: relative;
+        }
+
+        .language-btn {
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-xs);
+            color: white;
+            background: rgba(255, 255, 255, 0.1);
+            padding: var(--spacing-xs) var(--spacing-sm);
+            border-radius: var(--border-radius-sm);
+            transition: all 0.3s ease;
+        }
+
+        .language-btn:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        .language-dropdown {
+            position: absolute;
+            top: 100%;
+            right: 0;
+            background: white;
+            border-radius: var(--border-radius-md);
+            box-shadow: var(--shadow-lg);
+            padding: var(--spacing-sm);
+            min-width: 150px;
+            display: none;
+            z-index: 100;
+            animation: fadeIn 0.3s ease;
+        }
+
+        .language-switcher:hover .language-dropdown {
+            display: block;
+        }
+
+        .language-option {
+            padding: var(--spacing-sm) var(--spacing-md);
+            border-radius: var(--border-radius-sm);
+            cursor: pointer;
+            color: var(--text-primary);
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-sm);
+            transition: all 0.2s ease;
+        }
+
+        .language-option:hover {
+            background: var(--primary-light);
+            color: var(--primary);
+        }
+
+        /* Hero Section */
+       /* Hero Section */
+.hero {
+    background: 
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+        url('./Image.jpg'); /* Update path to your image */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+    padding: var(--spacing-3xl) 0;
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top, var(--background-light), transparent);
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 var(--spacing-md);
+}
+
+.hero-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 3.5rem;
+    margin-bottom: var(--spacing-lg);
+    line-height: 1.2;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.hero-subtitle {
+    font-size: 1.3rem;
+    margin-bottom: var(--spacing-2xl);
+    opacity: 0.9;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+        /* Featured Deals */
+        .deals-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: var(--spacing-2xl);
+            margin-top: var(--spacing-2xl);
+        }
+
+        .deal-card {
+            background: white;
+            border-radius: var(--border-radius-xl);
+            overflow: hidden;
+            box-shadow: var(--shadow-md);
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .deal-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .deal-badge {
+            position: absolute;
+            top: var(--spacing-md);
+            left: var(--spacing-md);
+            background: var(--error);
+            color: white;
+            padding: var(--spacing-xs) var(--spacing-sm);
+            border-radius: var(--border-radius-sm);
+            font-weight: 600;
+            font-size: 0.9rem;
+            z-index: 2;
+        }
+
+        .deal-image-container {
+            height: 200px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .deal-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .deal-card:hover .deal-image {
+            transform: scale(1.1);
+        }
+
+        .deal-content {
+            padding: var(--spacing-lg);
+        }
+
+        .deal-title {
+            font-size: 1.2rem;
+            margin-bottom: var(--spacing-sm);
+            font-weight: 600;
+            color: var(--primary);
+        }
+
+        .deal-shop {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            margin-bottom: var(--spacing-md);
+        }
+
+        .deal-price {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: var(--spacing-md);
+        }
+
+        .price-current {
+            font-weight: bold;
+            color: var(--primary);
+            font-size: 1.4rem;
+        }
+
+        .price-original {
+            text-decoration: line-through;
+            color: var(--text-secondary);
+            font-size: 1rem;
+        }
+
+        .deal-discount {
+            background: var(--error);
+            color: white;
+            padding: var(--spacing-xs) var(--spacing-sm);
+            border-radius: var(--border-radius-sm);
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+
+        .deal-expiry {
+            color: var(--text-secondary);
+            font-size: 0.8rem;
+            margin-top: var(--spacing-sm);
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-xs);
+        }
+
+        .deal-actions {
+            display: flex;
+            gap: var(--spacing-sm);
+            margin-top: var(--spacing-lg);
+        }
+
+        .deal-btn {
+            flex: 1;
+            padding: var(--spacing-sm);
+            border-radius: var(--border-radius-sm);
+            font-weight: 500;
+            font-size: 0.9rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: var(--spacing-xs);
+            transition: all 0.3s ease;
+        }
+
+        .deal-btn-primary {
+            background-color: var(--primary);
+            color: white;
+        }
+
+        .deal-btn-primary:hover {
+            background-color: var(--primary-dark);
+        }
+
+        .deal-btn-secondary {
+            background-color: var(--background-dark);
+            color: var(--text-primary);
+        }
+
+        .deal-btn-secondary:hover {
+            background-color: #e0e0e0;
+        }
+
+        /* Deal Categories */
+        .deal-categories {
+            display: flex;
+            flex-wrap: wrap;
+            gap: var(--spacing-sm);
+            margin-bottom: var(--spacing-xl);
+            justify-content: center;
+        }
+
+        .deal-category {
+            padding: var(--spacing-xs) var(--spacing-md);
+            border-radius: var(--border-radius-lg);
+            background: var(--background-dark);
+            color: var(--text-primary);
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .deal-category:hover, .deal-category.active {
+            background: var(--primary);
+            color: white;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--primary-dark);
+            color: white;
+            padding: var(--spacing-3xl) 0 0;
+        }
+
+        .footer-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: var(--spacing-2xl);
+            margin-bottom: var(--spacing-2xl);
+        }
+
+        .footer-column h3 {
+            font-size: 1.3rem;
+            margin-bottom: var(--spacing-lg);
+            position: relative;
+            display: inline-block;
+        }
+
+        .footer-column h3::after {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            left: 0;
+            width: 50px;
+            height: 3px;
+            background: var(--secondary);
+        }
+
+        .footer-links {
+            list-style: none;
+        }
+
+        .footer-link {
+            margin-bottom: var(--spacing-sm);
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-sm);
+        }
+
+        .footer-link i {
+            width: 20px;
+            text-align: center;
+        }
+
+        .footer-link:hover {
+            color: var(--secondary);
+            transform: translateX(5px);
+        }
+
+        .footer-about p {
+            margin-bottom: var(--spacing-md);
+            opacity: 0.8;
+        }
+
+        .social-links {
+            display: flex;
+            gap: var(--spacing-md);
+            margin-top: var(--spacing-lg);
+        }
+
+        .social-link {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+        }
+
+        .social-link:hover {
+            background: var(--secondary);
+            color: var(--text-primary);
+            transform: translateY(-3px);
+        }
+
+        .footer-bottom {
+            background-color: rgba(0, 0, 0, 0.2);
+            padding: var(--spacing-md) 0;
+            text-align: center;
+        }
+
+        .copyright {
+            opacity: 0.7;
+            font-size: 0.9rem;
+        }
+
+        /* Mobile Menu */
+        .mobile-menu {
+            position: fixed;
+            top: 0;
+            right: -100%;
+            width: 300px;
+            height: 100vh;
+            background: white;
+            box-shadow: var(--shadow-xl);
+            z-index: 1000;
+            transition: all 0.3s ease;
+            padding: var(--spacing-2xl) var(--spacing-lg);
+            overflow-y: auto;
+        }
+
+        .mobile-menu.open {
+            right: 0;
+        }
+
+        .mobile-menu-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: var(--spacing-xl);
+        }
+
+        .close-menu {
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            color: var(--text-secondary);
+        }
+
+        .mobile-nav-items {
+            display: flex;
+            flex-direction: column;
+            gap: var(--spacing-md);
+        }
+
+        .mobile-nav-item {
+            padding: var(--spacing-sm) 0;
+            border-bottom: 1px solid var(--background-dark);
+            color: var(--text-primary);
+            font-weight: 500;
+        }
+
+        .mobile-menu-footer {
+            margin-top: var(--spacing-xl);
+            padding-top: var(--spacing-xl);
+            border-top: 1px solid var(--background-dark);
+        }
+
+        /* Overlay */
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 999;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .overlay.active {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 992px) {
+            .hero-title {
+                font-size: 2.8rem;
+            }
+            
+            .section-title {
+                font-size: 2.2rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .nav-items {
+                display: none;
+            }
+            
+            .mobile-menu-btn {
+                display: block;
+            }
+            
+            .hero-title {
+                font-size: 2.2rem;
+            }
+            
+            .hero-subtitle {
+                font-size: 1.1rem;
+            }
+            
+            .deal-categories {
+                justify-content: flex-start;
+                overflow-x: auto;
+                padding-bottom: var(--spacing-sm);
+                -webkit-overflow-scrolling: touch;
+            }
+            
+            .deal-category {
+                white-space: nowrap;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .hero {
+                min-height: auto;
+                padding: var(--spacing-2xl) 0;
+            }
+            
+            .section {
+                padding: var(--spacing-2xl) 0;
+            }
+            
+            .section-title {
+                font-size: 1.8rem;
+            }
+            
+            .container {
+                padding: 0 var(--spacing-md);
+            }
+            
+            .logo-text {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header id="header">
+         <div class="container header-container">
+            <a href="index.html" class="logo">
+                
+                
+                  <img 
+            src="./Icon365.PNG" 
+            alt="አስቤዛ 365 Logo" 
+            class="logo-icon" 
+            width="100" 
+            height="80"
+        >
+            </a>
+            
+            <nav class="nav-items">
+                <a href="../index.html" class="nav-item">Home</a>
+                <a href="../System/Shops.html" class="nav-item">Shops</a>
+                <a href="../System/Products.html" class="nav-item">Products</a>
+                <a href="../System/Deals.html" class="nav-item active">Deals</a>
+                <a href="../System/About.html" class="nav-item">About</a>
+                <a href="../System/Contacts.html" class="nav-item">Contact</a>
+                <a href="../System/Other Pages.html" class="nav-item">Become a Delivery Man/Woman</a>
+            </nav>
+            
+            <div class="header-right">
+                <div class="language-switcher">
+                    <button class="language-btn">
+                        <span class="language-flag">🇬🇧</span>
+                        <span>EN</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="language-dropdown">
+                        <div class="language-option" data-lang="en">🇬🇧 English</div>
+                        <div class="language-option" data-lang="am">🇪🇹 አማርኛ</div>
+                        <div class="language-option" data-lang="om">🇪🇹 Afaan Oromoo</div>
+                        <div class="language-option" data-lang="ti">🇪🇹 ትግርኛ</div>
+                    </div>
+                </div>
+                
+                <a href="cart.html" class="nav-item">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </a>
+                
+                <a href="../System/Login.html" class="auth-button">Login</a>
+                
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-header">
+            <div class="logo">
+                <span class="logo-icon">🛒</span>
+                <span class="logo-text">Asbeza365</span>
+            </div>
+            <button class="close-menu" id="closeMenu">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        
+        <nav class="mobile-nav-items">
+            <a href="../index.html" class="mobile-nav-item">Home</a>
+            <a href="../System/Shops.html" class="mobile-nav-item">Shops</a>
+            <a href="../System/Products.html" class="mobile-nav-item">Products</a>
+            <a href="../System/Deals.html" class="mobile-nav-item active">Deals</a>
+            <a href="../System/About.html" class="mobile-nav-item">About</a>
+            <a href="../System/Contacts.html" class="mobile-nav-item">Contact</a>
+            <a href="../System/Other Pages.html" class="mobile-nav-item">Become a Delivery Man/Woman</a>
+        </nav>
+        
+        <div class="mobile-menu-footer">
+            <div class="language-switcher">
+                <button class="language-btn" style="width: 100%; justify-content: center;">
+                    <span class="language-flag">🇬🇧</span>
+                    <span>English</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="language-dropdown" style="position: relative; top: 0; right: auto; width: 100%; margin-top: var(--spacing-sm);">
+                    <div class="language-option" data-lang="en">🇬🇧 English</div>
+                    <div class="language-option" data-lang="am">🇪🇹 አማርኛ</div>
+                    <div class="language-option" data-lang="om">🇪🇹 Afaan Oromoo</div>
+                    <div class="language-option" data-lang="ti">🇪🇹 ትግርኛ</div>
+                </div>
+            </div>
+            <a href="../System/Login.html" class="btn btn-primary" style="width: 100%; margin-top: var(--spacing-lg);">
+                Login / Register
+            </a>
+        </div>
+    </div>
+
+    <div class="overlay" id="overlay"></div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title slide-up">Exclusive Grocery Deals</h1>
+            <p class="hero-subtitle slide-up">Save big with our curated selection of the best discounts and offers from supermarkets across Addis</p>
+        </div>
+    </section>
+
+    <!-- Deals Section -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Today's Best Deals</h2>
+            <p class="text-center">Limited-time offers from your favorite stores</p>
+            
+            <div class="deal-categories">
+                <button class="deal-category active">All Deals</button>
+                <button class="deal-category">Supermarkets</button>
+                <button class="deal-category">Staples</button>
+                <button class="deal-category">Dairy</button>
+                <button class="deal-category">Meat</button>
+                <button class="deal-category">Vegetables</button>
+                <button class="deal-category">Beverages</button>
+                <button class="deal-category">Household</button>
+            </div>
+            
+            <div class="deals-grid">
+                <!-- Deal 1 -->
+                <div class="deal-card fade-in" style="animation-delay: 0.1s;">
+                    <div class="deal-badge">50% OFF</div>
+                    <div class="deal-image-container">
+                        <img src="./teff.PNG" alt="Teff Flour" class="deal-image">
+                    </div>
+                    <div class="deal-content">
+                        <h3 class="deal-title">Organic Teff Flour (5kg)</h3>
+                        <p class="deal-shop">Queens Supermarket</p>
+                        <div class="deal-price">
+                            <div>
+                                <span class="price-current">2500 ETB</span>
+                                <span class="price-original">5000 ETB</span>
+                            </div>
+                            <span class="deal-discount">-50%</span>
+                        </div>
+                        <p class="deal-expiry">
+                            <i class="fas fa-clock"></i> Ends in 2 days
+                        </p>
+                        <div class="deal-actions">
+                            <button class="deal-btn deal-btn-primary">
+                                <i class="fas fa-cart-plus"></i> Add to Cart
+                            </button>
+                            <button class="deal-btn deal-btn-secondary">
+                                <i class="fas fa-exchange-alt"></i> Compare
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Deal 2 -->
+                <div class="deal-card fade-in" style="animation-delay: 0.2s;">
+                    <div class="deal-badge">30% OFF</div>
+                    <div class="deal-image-container">
+                        <img src="./ev olive oil.PNG" alt="Olive Oil" class="deal-image">
+                    </div>
+                    <div class="deal-content">
+                        <h3 class="deal-title">Extra Virgin Olive Oil (1L)</h3>
+                        <p class="deal-shop">Fresh Corner</p>
+                        <div class="deal-price">
+                            <div>
+                                <span class="price-current">1450 ETB</span>
+                                <span class="price-original">2100 ETB</span>
+                            </div>
+                            <span class="deal-discount">-30%</span>
+                        </div>
+                        <p class="deal-expiry">
+                            <i class="fas fa-clock"></i> Ends in 5 days
+                        </p>
+                        <div class="deal-actions">
+                            <button class="deal-btn deal-btn-primary">
+                                <i class="fas fa-cart-plus"></i> Add to Cart
+                            </button>
+                            <button class="deal-btn deal-btn-secondary">
+                                <i class="fas fa-exchange-alt"></i> Compare
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Deal 3 -->
+                <div class="deal-card fade-in" style="animation-delay: 0.3s;">
+                    <div class="deal-badge">BUY 1 GET 1</div>
+                    <div class="deal-image-container">
+                        <img src="./honey.PNG" alt="Honey" class="deal-image">
+                    </div>
+                    <div class="deal-content">
+                        <h3 class="deal-title">Pure Ethiopian Honey (500g)</h3>
+                        <p class="deal-shop">Shoa Supermarket</p>
+                        <div class="deal-price">
+                            <div>
+                                <span class="price-current">3600 ETB</span>
+                                <span class="price-original">4000 ETB</span>
+                            </div>
+                            <span class="deal-discount">BOGO</span>
+                        </div>
+                        <p class="deal-expiry">
+                            <i class="fas fa-clock"></i> Ends tomorrow
+                        </p>
+                        <div class="deal-actions">
+                            <button class="deal-btn deal-btn-primary">
+                                <i class="fas fa-cart-plus"></i> Add to Cart
+                            </button>
+                            <button class="deal-btn deal-btn-secondary">
+                                <i class="fas fa-exchange-alt"></i> Compare
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Deal 4 -->
+                <div class="deal-card fade-in" style="animation-delay: 0.4s;">
+                    <div class="deal-badge">20% OFF</div>
+                    <div class="deal-image-container">
+                        <img src="./coffee.PNG" alt="Coffee" class="deal-image">
+                    </div>
+                    <div class="deal-content">
+                        <h3 class="deal-title">Yirgacheffe Coffee (250g)</h3>
+                        <p class="deal-shop">Kaldis Coffee</p>
+                        <div class="deal-price">
+                            <div>
+                                <span class="price-current">795 ETB</span>
+                                <span class="price-original">1000 ETB</span>
+                            </div>
+                            <span class="deal-discount">-20%</span>
+                        </div>
+                        <p class="deal-expiry">
+                            <i class="fas fa-clock"></i> Ends in 3 days
+                        </p>
+                        <div class="deal-actions">
+                            <button class="deal-btn deal-btn-primary">
+                                <i class="fas fa-cart-plus"></i> Add to Cart
+                            </button>
+                            <button class="deal-btn deal-btn-secondary">
+                                <i class="fas fa-exchange-alt"></i> Compare
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Deal 5 -->
+                <div class="deal-card fade-in" style="animation-delay: 0.5s;">
+                    <div class="deal-badge">15% OFF</div>
+                    <div class="deal-image-container">
+                        <img src="./staples and greens.PNG" alt="Rice" class="deal-image">
+                    </div>
+                    <div class="deal-content">
+                        <h3 class="deal-title">Basmati Rice (5kg)</h3>
+                        <p class="deal-shop">Shoa Supermarket</p>
+                        <div class="deal-price">
+                            <div>
+                                <span class="price-current">1275 ETB</span>
+                                <span class="price-original">1500 ETB</span>
+                            </div>
+                            <span class="deal-discount">-15%</span>
+                        </div>
+                        <p class="deal-expiry">
+                            <i class="fas fa-clock"></i> Ends in 1 week
+                        </p>
+                        <div class="deal-actions">
+                            <button class="deal-btn deal-btn-primary">
+                                <i class="fas fa-cart-plus"></i> Add to Cart
+                            </button>
+                            <button class="deal-btn deal-btn-secondary">
+                                <i class="fas fa-exchange-alt"></i> Compare
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Deal 6 -->
+                <div class="deal-card fade-in" style="animation-delay: 0.6s;">
+                    <div class="deal-badge">10% OFF</div>
+                    <div class="deal-image-container">
+                        <img src="./Milk and Dairy.PNG" alt="Milk" class="deal-image">
+                    </div>
+                    <div class="deal-content">
+                        <h3 class="deal-title">Fresh Milk (1L Pack of 6)</h3>
+                        <p class="deal-shop">Mama Fresh Dairy</p>
+                        <div class="deal-price">
+                            <div>
+                                <span class="price-current">540 ETB</span>
+                                <span class="price-original">600 ETB</span>
+                            </div>
+                            <span class="deal-discount">-10%</span>
+                        </div>
+                        <p class="deal-expiry">
+                            <i class="fas fa-clock"></i> Ends in 4 days
+                        </p>
+                        <div class="deal-actions">
+                            <button class="deal-btn deal-btn-primary">
+                                <i class="fas fa-cart-plus"></i> Add to Cart
+                            </button>
+                            <button class="deal-btn deal-btn-secondary">
+                                <i class="fas fa-exchange-alt"></i> Compare
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center" style="margin-top: var(--spacing-xl);">
+                <a href="#" class="btn btn-primary">
+                    Load More Deals <i class="fas fa-arrow-down"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <div class="container">
+        <div class="newsletter">
+            <h2 class="newsletter-title">Get Deal Alerts</h2>
+            <p class="newsletter-subtitle">
+                Subscribe to receive notifications about the latest discounts and special offers
+            </p>
+            
+            <form class="newsletter-form">
+                <input type="email" class="newsletter-input" placeholder="Your email address" required>
+                <button type="submit" class="newsletter-button">
+                    Subscribe <i class="fas fa-paper-plane"></i>
+                </button>
+            </form>
+        </div>
+    </div>
+<script>
+  // Deal data
+  const deals = [
+    {
+      id: 1,
+      title: "Organic Teff Flour (5kg)",
+      shop: "Queens Supermarket",
+      category: "Staples",
+      price: 2500,
+      originalPrice: 5000,
+      discount: 50,
+      badge: "50% OFF",
+      expiry: "2 days",
+      image: "./teff.PNG",
+      type: "percentage"
+    },
+    {
+      id: 2,
+      title: "Extra Virgin Olive Oil (1L)",
+      shop: "Fresh Corner",
+      category: "Staples",
+      price: 1450,
+      originalPrice: 2100,
+      discount: 30,
+      badge: "30% OFF",
+      expiry: "5 days",
+      image: "./ev olive oil.PNG",
+      type: "percentage"
+    },
+    {
+      id: 3,
+      title: "Pure Ethiopian Honey (500g)",
+      shop: "Shoa Supermarket",
+      category: "Staples",
+      price: 3600,
+      originalPrice: 4000,
+      discount: 10,
+      badge: "BUY 1 GET 1",
+      expiry: "tomorrow",
+      image: "./honey.PNG",
+      type: "bogo"
+    },
+    {
+      id: 4,
+      title: "Yirgacheffe Coffee (250g)",
+      shop: "Kaldis Coffee",
+      category: "Beverages",
+      price: 795,
+      originalPrice: 1000,
+      discount: 20,
+      badge: "20% OFF",
+      expiry: "3 days",
+      image: "./coffee.PNG",
+      type: "percentage"
+    },
+    {
+      id: 5,
+      title: "Basmati Rice (5kg)",
+      shop: "Showa Supermarket",
+      category: "Staples",
+      price: 1275,
+      originalPrice: 1500,
+      discount: 15,
+      badge: "15% OFF",
+      expiry: "1 week",
+      image: "./staples and greens.PNG",
+      type: "percentage"
+    },
+    {
+      id: 6,
+      title: "Fresh Milk (1L Pack of 6)",
+      shop: "Mama Fresh Dairy",
+      category: "Dairy",
+      price: 540,
+      originalPrice: 600,
+      discount: 10,
+      badge: "10% OFF",
+      expiry: "4 days",
+      image: "./Milk and Dairy.PNG",
+      type: "percentage"
+    },
+    {
+      id: 7,
+      title: "Fresh Chicken (1kg)",
+      shop: "Bole Butcher",
+      category: "Meat",
+      price: 220,
+      originalPrice: 250,
+      discount: 12,
+      badge: "12% OFF",
+      expiry: "2 days",
+      image: "./Meat and Poultry.PNG",
+      type: "percentage"
+    },
+    {
+      id: 8,
+      title: "Fresh Tomatoes (1kg)",
+      shop: "Green Valley",
+      category: "Vegetables",
+      price: 45,
+      originalPrice: 60,
+      discount: 25,
+      badge: "25% OFF",
+      expiry: "today",
+      image: "./Fruits and Vegetables.PNG",
+      type: "percentage"
+    }
+  ];
+
+  // DOM Elements
+  const dealsGrid = document.querySelector('.deals-grid');
+  const dealCategories = document.querySelectorAll('.deal-category');
+  const searchInput = document.querySelector('.search-input');
+  const searchButton = document.querySelector('.search-button');
+  const loadMoreBtn = document.querySelector('.btn.btn-primary');
+
+  // Current state
+  let currentPage = 1;
+  const dealsPerPage = 6;
+  let filteredDeals = [...deals];
+  let displayedDeals = 0;
+  let currentCategory = 'All Deals';
+
+  // Initialize the page
+  function init() {
+    renderDeals();
+    setupEventListeners();
+  }
+
+  // Set up event listeners
+  function setupEventListeners() {
+    // Category filter
+    dealCategories.forEach(category => {
+      category.addEventListener('click', () => {
+        dealCategories.forEach(c => c.classList.remove('active'));
+        category.classList.add('active');
+        currentCategory = category.textContent;
+        filterDeals();
+      });
+    });
+
+    // Search functionality
+    searchInput.addEventListener('input', filterDeals);
+    searchButton.addEventListener('click', filterDeals);
+
+    // Load more button
+    if (loadMoreBtn) {
+      loadMoreBtn.addEventListener('click', loadMoreDeals);
+    }
+  }
+
+  // Filter deals based on search and category
+  function filterDeals() {
+    const searchTerm = searchInput.value.toLowerCase();
+    
+    // Filter by category and search term
+    filteredDeals = deals.filter(deal => {
+      const matchesCategory = currentCategory === 'All Deals' || 
+                            deal.category === currentCategory || 
+                            (currentCategory === 'Supermarkets' && deal.shop.includes('Supermarket')) ||
+                            (currentCategory === 'Household' && deal.category === 'Household');
+      
+      const matchesSearch = deal.title.toLowerCase().includes(searchTerm) || 
+                          deal.shop.toLowerCase().includes(searchTerm) ||
+                          deal.category.toLowerCase().includes(searchTerm);
+      
+      return matchesCategory && matchesSearch;
+    });
+
+    currentPage = 1;
+    renderDeals();
+  }
+
+  // Render deals to the grid
+  function renderDeals() {
+    dealsGrid.innerHTML = '';
+    displayedDeals = 0;
+    loadMoreDeals();
+  }
+
+  // Load more deals (pagination)
+  function loadMoreDeals() {
+    const startIndex = (currentPage - 1) * dealsPerPage;
+    const endIndex = startIndex + dealsPerPage;
+    const dealsToShow = filteredDeals.slice(displayedDeals, displayedDeals + dealsPerPage);
+
+    if (dealsToShow.length === 0) {
+      if (loadMoreBtn) loadMoreBtn.style.display = 'none';
+      if (filteredDeals.length === 0) {
+        dealsGrid.innerHTML = '<p class="text-center" style="grid-column: 1/-1; padding: var(--spacing-xl) 0;">No deals found matching your criteria.</p>';
+      }
+      return;
+    }
+
+    dealsToShow.forEach((deal, index) => {
+      const dealCard = createDealCard(deal, displayedDeals + index);
+      dealsGrid.appendChild(dealCard);
+    });
+
+    displayedDeals += dealsToShow.length;
+    currentPage++;
+
+    if (loadMoreBtn) {
+      if (displayedDeals >= filteredDeals.length) {
+        loadMoreBtn.style.display = 'none';
+      } else {
+        loadMoreBtn.style.display = 'inline-block';
+      }
+    }
+  }
+
+  // Create deal card HTML
+  function createDealCard(deal, index) {
+    const card = document.createElement('div');
+    card.className = `deal-card fade-in`;
+    card.style.animationDelay = `${(index % 8) * 0.1}s`;
+    
+    let discountBadge = '';
+    if (deal.type === 'percentage') {
+      discountBadge = `-${deal.discount}%`;
+    } else if (deal.type === 'bogo') {
+      discountBadge = 'BOGO';
+    }
+
+    card.innerHTML = `
+      <div class="deal-badge">${deal.badge}</div>
+      <div class="deal-image-container">
+        <img src="${deal.image}" alt="${deal.title}" class="deal-image">
+      </div>
+      <div class="deal-content">
+        <h3 class="deal-title">${deal.title}</h3>
+        <p class="deal-shop">${deal.shop}</p>
+        <div class="deal-price">
+          <div>
+            <span class="price-current">${deal.price} ETB</span>
+            <span class="price-original">${deal.originalPrice} ETB</span>
+          </div>
+          <span class="deal-discount">${discountBadge}</span>
+        </div>
+        <p class="deal-expiry">
+          <i class="fas fa-clock"></i> Ends ${deal.expiry}
+        </p>
+        <div class="deal-actions">
+          <button class="deal-btn deal-btn-primary">
+            <i class="fas fa-cart-plus"></i> Add to Cart
+          </button>
+          <button class="deal-btn deal-btn-secondary">
+            <i class="fas fa-exchange-alt"></i> Compare
+          </button>
+        </div>
+      </div>
+    `;
+
+    // Add click event for the Add to Cart button
+    const addToCartBtn = card.querySelector('.deal-btn-primary');
+    addToCartBtn.addEventListener('click', () => addToCart(deal));
+
+    return card;
+  }
+
+  // Add to cart function
+  function addToCart(deal) {
+    const notification = document.createElement('div');
+    notification.style.position = 'fixed';
+    notification.style.bottom = '20px';
+    notification.style.right = '20px';
+    notification.style.backgroundColor = 'var(--primary)';
+    notification.style.color = 'white';
+    notification.style.padding = 'var(--spacing-md) var(--spacing-lg)';
+    notification.style.borderRadius = 'var(--border-radius-md)';
+    notification.style.boxShadow = 'var(--shadow-lg)';
+    notification.style.zIndex = '1000';
+    notification.style.display = 'flex';
+    notification.style.alignItems = 'center';
+    notification.style.gap = 'var(--spacing-sm)';
+    notification.style.animation = 'slideUp 0.3s ease forwards';
+    notification.innerHTML = `
+      <i class="fas fa-check-circle"></i>
+      Added to cart: ${deal.title} - ${deal.price} ETB
+    `;
+    
+    document.body.appendChild(notification);
+    
+    setTimeout(() => {
+      notification.style.animation = 'fadeOut 0.3s ease forwards';
+      setTimeout(() => notification.remove(), 300);
+    }, 3000);
+    
+    // Update cart count
+    const cartCount = document.querySelector('.cart-count');
+    if (cartCount) {
+      const currentCount = parseInt(cartCount.textContent) || 0;
+      cartCount.textContent = currentCount + 1;
+      
+      // Add animation
+      cartCount.style.transform = 'scale(1.5)';
+      setTimeout(() => {
+        cartCount.style.transform = 'scale(1)';
+      }, 300);
+    }
+  }
+
+  // Initialize the page
+  document.addEventListener('DOMContentLoaded', init);
+</script>
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-column footer-about">
+                    <h3>Asbeza365</h3>
+                    <p>Your ultimate grocery price comparison platform in Addis Ababa. Save money on every purchase with our smart shopping tools.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-telegram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html" class="footer-link"><i class="fas fa-chevron-right"></i> Home</a></li>
+                        <li><a href="shops.html" class="footer-link"><i class="fas fa-chevron-right"></i> Shops</a></li>
+                        <li><a href="products.html" class="footer-link"><i class="fas fa-chevron-right"></i> Products</a></li>
+                        <li><a href="deals.html" class="footer-link"><i class="fas fa-chevron-right"></i> Deals</a></li>
+                        <li><a href="about.html" class="footer-link"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Customer Service</h3>
+                    <ul class="footer-links">
+                        <li><a href="faq.html" class="footer-link"><i class="fas fa-chevron-right"></i> FAQ</a></li>
+                        <li><a href="contact.html" class="footer-link"><i class="fas fa-chevron-right"></i> Contact Us</a></li>
+                        <li><a href="privacy.html" class="footer-link"><i class="fas fa-chevron-right"></i> Privacy Policy</a></li>
+                        <li><a href="terms.html" class="footer-link"><i class="fas fa-chevron-right"></i> Terms of Service</a></li>
+                        <li><a href="shipping.html" class="footer-link"><i class="fas fa-chevron-right"></i> Shipping & Returns</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Contact Info</h3>
+                    <ul class="footer-links">
+                        <li><a href="#" class="footer-link"><i class="fas fa-map-marker-alt"></i> Bole Road, Addis Ababa, Ethiopia</a></li>
+                        <li><a href="tel:+251934592679" class="footer-link"><i class="fas fa-phone"></i> +251 934592679</a></li>
+                        <li><a href="mailto:info@asbeza365.com" class="footer-link"><i class="fas fa-envelope"></i> info@asbeza365.com</a></li>
+                        <li><a href="#" class="footer-link"><i class="fas fa-clock"></i> Mon-Sat: 8AM - 8PM</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="copyright">&copy; 2025 Asbeza365. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    
+    <!-- Main JavaScript -->
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const closeMenu = document.getElementById('closeMenu');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const overlay = document.getElementById('overlay');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.add('open');
+            overlay.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        });
+
+        closeMenu.addEventListener('click', () => {
+            mobileMenu.classList.remove('open');
+            overlay.classList.remove('active');
+            document.body.style.overflow = '';
+        });
+
+        overlay.addEventListener('click', () => {
+            mobileMenu.classList.remove('open');
+            overlay.classList.remove('active');
+            document.body.style.overflow = '';
+        });
+
+        // Header Scroll Effect
+        const header = document.getElementById('header');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
+        // Language Configuration
+        const languageConfig = {
+            en: {
+                shopCompare: "Compare Prices",
+                bestDeal: "🏆 Best Deal",
+                addToCart: "Add to Cart",
+                currency: "ETB",
+                nav: {
+                    home: "Home",
+                    shops: "Shops",
+                    products: "Products",
+                    deals: "Deals",
+                    about: "About",
+                    contact: "Contact",
+                    profile: "Profile",
+                    login: "Login",
+                    logout: "Logout"
+                },
+                profile: {
+                    notLoggedIn: "Please login to view your profile",
+                    guest: "Guest",
+                    phoneNotSet: "Phone number not set"
+                }
+            },
+            am: {
+                shopCompare: "ዋጋ አወዳድር",
+                bestDeal: "🏆 ምርጥ ቅናሽ",
+                addToCart: "ወደ ጋሪ ጨምር",
+                currency: "ብር",
+                nav: {
+                    home: "መነሻ",
+                    shops: "መደብሮች",
+                    products: "ምርቶች",
+                    deals: "ቅናሾች",
+                    about: "ስለ እኛ",
+                    contact: "አግኙን",
+                    profile: "መገለጫ",
+                    login: "ግባ",
+                    logout: "ውጣ"
+                },
+                profile: {
+                    notLoggedIn: "እባክዎ መገለጫዎን ለማየት ይግቡ",
+                    guest: "እንግዳ",
+                    phoneNotSet: "ስልክ ቁጥር አልተዘጋጀም"
+                }
+            },
+            om: {
+                shopCompare: "Qaallii Itoophiyaa",
+                bestDeal: "🏆 Gaarii Tokkummaa",
+                addToCart: "Gaaritti Dabaladhu",
+                currency: "ETB",
+                nav: {
+                    home: "Mana",
+                    shops: "Dukaanota",
+                    products: "Oomishaalee",
+                    deals: "Qaallii",
+                    about: "Waa'ee keenya",
+                    contact: "Nu qunnamtii",
+                    profile: "Seenaa",
+                    login: "Seensa",
+                    logout: "Ba'i"
+                },
+                profile: {
+                    notLoggedIn: "Maaloo seenaa kee ilaaluuf seeni",
+                    guest: "Keessummaa",
+                    phoneNotSet: "Lakkoofsa bilbilaa hin qabne"
+                }
+            },
+            ti: {
+                shopCompare: "ዕዳጋ ኣወዳድር",
+                bestDeal: "🏆 ምርጥ ዋጋ",
+                addToCart: "ናብ ጋሪ ወስኽ",
+                currency: "ብር",
+                nav: {
+                    home: "ቤት",
+                    shops: "ድኳን",
+                    products: "ዕረፍቲ",
+                    deals: "ሽምጥል",
+                    about: "ብዛዕባና",
+                    contact: "ርኸቡና",
+                    profile: "መግለጺ",
+                    login: "እቶ",
+                    logout: "ውጻእ"
+                },
+                profile: {
+                    notLoggedIn: "በጃኹም መግለጽኩም ንምርኣይ እቶ",
+                    guest: "ኣጋር",
+                    phoneNotSet: "ቁጽሪ ስልኪ ኣይተሰራሕኩን"
+                }
+            }
+        };
+
+        // Current language
+        let currentLanguage = 'en';
+        const dirRTL = ['am', 'ti'];
+
+        // DOM Elements
+        const languageOptions = document.querySelectorAll('.language-option');
+        const languageBtn = document.querySelector('.language-btn');
+        const htmlElement = document.documentElement;
+
+        // Set language
+        function setLanguage(lang) {
+            currentLanguage = lang;
+            
+            // Update HTML direction
+            if (dirRTL.includes(lang)) {
+                htmlElement.dir = 'rtl';
+                htmlElement.classList.add('rtl');
+            } else {
+                htmlElement.dir = 'ltr';
+                htmlElement.classList.remove('rtl');
+            }
+            
+            // Update language button
+            const langData = {
+                en: { flag: '🇬🇧', name: 'EN' },
+                am: { flag: '🇪🇹', name: 'AM' },
+                om: { flag: '🇪🇹', name: 'OM' },
+                ti: { flag: '🇪🇹', name: 'TI' }
+            };
+            
+            languageBtn.innerHTML = `
+                <span class="language-flag">${langData[lang].flag}</span>
+                <span>${langData[lang].name}</span>
+                <i class="fas fa-chevron-down"></i>
+            `;
+            
+            // Translate navigation items
+            const navItems = document.querySelectorAll('.nav-item:not(.auth-button)');
+            if (navItems.length > 0) {
+                navItems.forEach(item => {
+                    const key = item.textContent.trim().toLowerCase();
+                    if (languageConfig[lang].nav[key]) {
+                        item.textContent = languageConfig[lang].nav[key];
+                    }
+                });
+            }
+            
+            // Translate mobile menu items
+            const mobileNavItems = document.querySelectorAll('.mobile-nav-item');
+            mobileNavItems.forEach(item => {
+                const key = item.textContent.trim().toLowerCase();
+                if (languageConfig[lang].nav[key]) {
+                    item.textContent = languageConfig[lang].nav[key];
+                }
+            });
+            
+            // Update price comparison cards
+            document.querySelectorAll('.add-to-cart').forEach(btn => {
+                btn.textContent = languageConfig[lang].addToCart;
+            });
+            
+            document.querySelectorAll('.best-deal-badge').forEach(badge => {
+                badge.setAttribute('title', languageConfig[lang].bestDeal);
+            });
+            
+            // Update section titles and other text elements
+            const elementsToTranslate = {
+                '.section-title': 'Today\'s Best Deals',
+                '.btn-primary': 'Load More Deals',
+                '.newsletter-title': 'Get Deal Alerts'
+            };
+            
+            for (const selector in elementsToTranslate) {
+                const element = document.querySelector(selector);
+                if (element) {
+                    const key = elementsToTranslate[selector];
+                    if (languageConfig[lang][key]) {
+                        element.textContent = languageConfig[lang][key];
+                    }
+                }
+            }
+        }
+
+        // Language switcher event listeners
+        languageOptions.forEach(option => {
+            option.addEventListener('click', () => {
+                const lang = option.getAttribute('data-lang');
+                setLanguage(lang);
+                
+                // Close dropdown after selection
+                document.querySelector('.language-dropdown').style.display = 'none';
+            });
+        });
+
+        // Close dropdown when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('.language-switcher')) {
+                document.querySelector('.language-dropdown').style.display = 'none';
+            }
+        });
+
+        // Initialize with English
+        setLanguage('en');
+
+        // Add to cart functionality
+        const addToCartButtons = document.querySelectorAll('.deal-btn-primary');
+        
+        addToCartButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const dealCard = button.closest('.deal-card');
+                const dealTitle = dealCard.querySelector('.deal-title').textContent;
+                const price = dealCard.querySelector('.price-current').textContent;
+                
+                // Create a nice notification
+                const notification = document.createElement('div');
+                notification.style.position = 'fixed';
+                notification.style.bottom = '20px';
+                notification.style.right = '20px';
+                notification.style.backgroundColor = 'var(--primary)';
+                notification.style.color = 'white';
+                notification.style.padding = 'var(--spacing-md) var(--spacing-lg)';
+                notification.style.borderRadius = 'var(--border-radius-md)';
+                notification.style.boxShadow = 'var(--shadow-lg)';
+                notification.style.zIndex = '1000';
+                notification.style.display = 'flex';
+                notification.style.alignItems = 'center';
+                notification.style.gap = 'var(--spacing-sm)';
+                notification.style.animation = 'slideUp 0.3s ease forwards';
+                notification.innerHTML = `
+                    <i class="fas fa-check-circle"></i>
+                    ${languageConfig[currentLanguage].addToCart}: ${dealTitle} - ${price}
+                `;
+                
+                document.body.appendChild(notification);
+                
+                // Remove after 3 seconds
+                setTimeout(() => {
+                    notification.style.animation = 'fadeOut 0.3s ease forwards';
+                    setTimeout(() => notification.remove(), 300);
+                }, 3000);
+                
+                // Update cart count
+                const cartCount = document.querySelector('.cart-count');
+                if (cartCount) {
+                    const currentCount = parseInt(cartCount.textContent) || 0;
+                    cartCount.textContent = currentCount + 1;
+                    
+                    // Add animation
+                    cartCount.style.transform = 'scale(1.5)';
+                    setTimeout(() => {
+                        cartCount.style.transform = 'scale(1)';
+                    }, 300);
+                }
+            });
+        });
+
+        // Deal category filter
+        const dealCategories = document.querySelectorAll('.deal-category');
+        
+        dealCategories.forEach(category => {
+            category.addEventListener('click', () => {
+                dealCategories.forEach(c => c.classList.remove('active'));
+                category.classList.add('active');
+                
+                // In a real implementation, you would filter deals here
+                // For now, we'll just simulate it with a loading effect
+                const dealsGrid = document.querySelector('.deals-grid');
+                dealsGrid.style.opacity = '0.5';
+                
+                setTimeout(() => {
+                    dealsGrid.style.opacity = '1';
+                }, 500);
+            });
+        });
+
+        // Animation on scroll
+        const animateOnScroll = () => {
+            const elements = document.querySelectorAll('.fade-in, .slide-up');
+            
+            elements.forEach(element => {
+                const elementPosition = element.getBoundingClientRect().top;
+                const screenPosition = window.innerHeight / 1.2;
+                
+                if (elementPosition < screenPosition) {
+                    element.style.opacity = '1';
+                    element.style.transform = 'translateY(0)';
+                }
+            });
+        };
+
+        // Run once on load
+        animateOnScroll();
+        
+        // Run on scroll
+        window.addEventListener('scroll', animateOnScroll);
+    </script>
+    <script>
+  // Enhanced Deal Data with more categories and shops
+  const deals = [
+    {
+      id: 1,
+      title: "Organic Teff Flour (5kg)",
+      shop: "Queens Supermarket",
+      category: "Staples",
+      price: 2500,
+      originalPrice: 5000,
+      discount: 50,
+      badge: "50% OFF",
+      expiry: "Ends in 2 days",
+      image: "images/teff.PNG",
+      type: "percentage",
+      featured: true
+    },
+    {
+      id: 2,
+      title: "Extra Virgin Olive Oil (1L)",
+      shop: "Fresh Corner",
+      category: "Oils",
+      price: 1450,
+      originalPrice: 2100,
+      discount: 30,
+      badge: "30% OFF",
+      expiry: "Ends in 5 days",
+      image: "images/ev olive oil.PNG",
+      type: "percentage",
+      featured: true
+    },
+    {
+      id: 3,
+      title: "Pure Ethiopian Honey (500g)",
+      shop: "Shoa Supermarket",
+      category: "Sweeteners",
+      price: 3600,
+      originalPrice: 4000,
+      discount: 10,
+      badge: "BUY 1 GET 1",
+      expiry: "Ends tomorrow",
+      image: "images/honey.PNG",
+      type: "bogo",
+      featured: true
+    },
+    {
+      id: 4,
+      title: "Yirgacheffe Coffee (250g)",
+      shop: "Kaldis Coffee",
+      category: "Beverages",
+      price: 795,
+      originalPrice: 1000,
+      discount: 20,
+      badge: "20% OFF",
+      expiry: "Ends in 3 days",
+      image: "images/coffee.PNG",
+      type: "percentage",
+      featured: false
+    },
+    {
+      id: 5,
+      title: "Basmati Rice (5kg)",
+      shop: "Showa Supermarket",
+      category: "Staples",
+      price: 1275,
+      originalPrice: 1500,
+      discount: 15,
+      badge: "15% OFF",
+      expiry: "Ends in 1 week",
+      image: "images/staples and greens.PNG",
+      type: "percentage",
+      featured: false
+    },
+    {
+      id: 6,
+      title: "Fresh Milk (1L Pack of 6)",
+      shop: "Mama Fresh Dairy",
+      category: "Dairy",
+      price: 540,
+      originalPrice: 600,
+      discount: 10,
+      badge: "10% OFF",
+      expiry: "Ends in 4 days",
+      image: "images/Milk and Dairy.PNG",
+      type: "percentage",
+      featured: true
+    },
+    {
+      id: 7,
+      title: "Fresh Chicken (1kg)",
+      shop: "Bole Butcher",
+      category: "Meat",
+      price: 220,
+      originalPrice: 250,
+      discount: 12,
+      badge: "12% OFF",
+      expiry: "Ends in 2 days",
+      image: "images/Meat and Poultry.PNG",
+      type: "percentage",
+      featured: false
+    },
+    {
+      id: 8,
+      title: "Fresh Tomatoes (1kg)",
+      shop: "Green Valley",
+      category: "Vegetables",
+      price: 45,
+      originalPrice: 60,
+      discount: 25,
+      badge: "25% OFF",
+      expiry: "Ends today",
+      image: "images/Fruits and Vegetables.PNG",
+      type: "percentage",
+      featured: false
+    },
+    {
+      id: 9,
+      title: "Mineral Water (12 bottles)",
+      shop: "Aqua Springs",
+      category: "Beverages",
+      price: 240,
+      originalPrice: 300,
+      discount: 20,
+      badge: "20% OFF",
+      expiry: "Ends in 1 week",
+      image: "images/water.PNG",
+      type: "percentage",
+      featured: false
+    },
+    {
+      id: 10,
+      title: "Free Range Eggs (30 pieces)",
+      shop: "Happy Hens Farm",
+      category: "Dairy",
+      price: 180,
+      originalPrice: 200,
+      discount: 10,
+      badge: "10% OFF",
+      expiry: "Ends in 3 days",
+      image: "images/eggs.PNG",
+      type: "percentage",
+      featured: true
+    }
+  ];
+
+  // DOM Elements
+  const dealsGrid = document.querySelector('.deals-grid');
+  const dealCategoryButtons = document.querySelectorAll('.deal-category');
+  const searchInput = document.querySelector('.search-input');
+  const searchButton = document.querySelector('.search-button');
+  const loadMoreBtn = document.querySelector('.btn.btn-primary');
+
+  // Current state
+  let currentPage = 1;
+  const dealsPerPage = 6;
+  let filteredDeals = [...deals];
+  let displayedDeals = 0;
+  let currentCategory = 'All Deals';
+
+  // Initialize the page
+  function init() {
+    renderDeals();
+    setupEventListeners();
+  }
+
+  // Set up event listeners
+  function setupEventListeners() {
+    // Category filter buttons
+    dealCategoryButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        // Remove active class from all buttons
+        dealCategoryButtons.forEach(btn => btn.classList.remove('active'));
+        // Add active class to clicked button
+        button.classList.add('active');
+        // Update current category
+        currentCategory = button.textContent;
+        // Reset pagination
+        currentPage = 1;
+        // Filter deals
+        filterDeals();
+      });
+    });
+
+    // Search functionality
+    searchInput.addEventListener('input', () => {
+      currentPage = 1;
+      filterDeals();
+    });
+
+    searchButton.addEventListener('click', () => {
+      currentPage = 1;
+      filterDeals();
+    });
+
+    // Load more button
+    if (loadMoreBtn) {
+      loadMoreBtn.addEventListener('click', loadMoreDeals);
+    }
+  }
+
+  // Filter deals based on search term and category
+  function filterDeals() {
+    const searchTerm = searchInput.value.toLowerCase().trim();
+    
+    filteredDeals = deals.filter(deal => {
+      // Check if deal matches current category
+      const categoryMatch = 
+        currentCategory === 'All Deals' || 
+        deal.category === currentCategory ||
+        (currentCategory === 'Supermarkets' && deal.shop.includes('Supermarket')) ||
+        (currentCategory === 'Household' && deal.category === 'Household');
+      
+      // Check if deal matches search term
+      const searchMatch = 
+        deal.title.toLowerCase().includes(searchTerm) || 
+        deal.shop.toLowerCase().includes(searchTerm) || 
+        deal.category.toLowerCase().includes(searchTerm);
+      
+      return categoryMatch && searchMatch;
+    });
+
+    // Reset displayed deals counter
+    displayedDeals = 0;
+    // Clear the grid
+    dealsGrid.innerHTML = '';
+    // Load first page of results
+    loadMoreDeals();
+  }
+
+  // Load more deals (pagination)
+  function loadMoreDeals() {
+    const dealsToShow = filteredDeals.slice(displayedDeals, displayedDeals + dealsPerPage);
+
+    if (dealsToShow.length === 0) {
+      // Show "no results" message if no deals found
+      if (filteredDeals.length === 0) {
+        dealsGrid.innerHTML = `
+          <div class="no-results" style="grid-column: 1/-1; text-align: center; padding: 2rem;">
+            <i class="fas fa-search" style="font-size: 3rem; color: var(--text-secondary); margin-bottom: 1rem;"></i>
+            <h3 style="color: var(--text-primary); margin-bottom: 0.5rem;">No deals found</h3>
+            <p style="color: var(--text-secondary);">Try adjusting your search or filter criteria</p>
+          </div>
+        `;
+      }
+      // Hide load more button if no more deals to show
+      if (loadMoreBtn) loadMoreBtn.style.display = 'none';
+      return;
+    }
+
+    // Create and append deal cards
+    dealsToShow.forEach((deal, index) => {
+      const dealCard = createDealCard(deal, displayedDeals + index);
+      dealsGrid.appendChild(dealCard);
+    });
+
+    // Update counters
+    displayedDeals += dealsToShow.length;
+    currentPage++;
+
+    // Show/hide load more button
+    if (loadMoreBtn) {
+      loadMoreBtn.style.display = displayedDeals >= filteredDeals.length ? 'none' : 'inline-block';
+    }
+  }
+
+  // Create a deal card element
+  function createDealCard(deal, index) {
+    const card = document.createElement('div');
+    card.className = 'deal-card fade-in';
+    card.style.animationDelay = `${(index % 8) * 0.1}s`;
+    
+    // Calculate discount text
+    let discountText = '';
+    if (deal.type === 'percentage') {
+      discountText = `-${deal.discount}%`;
+    } else if (deal.type === 'bogo') {
+      discountText = 'BOGO';
+    }
+
+    card.innerHTML = `
+      <div class="deal-badge">${deal.badge}</div>
+      <div class="deal-image-container">
+        <img src="${deal.image}" alt="${deal.title}" class="deal-image">
+      </div>
+      <div class="deal-content">
+        <h3 class="deal-title">${deal.title}</h3>
+        <p class="deal-shop">${deal.shop}</p>
+        <div class="deal-price">
+          <div>
+            <span class="price-current">${deal.price} ETB</span>
+            <span class="price-original">${deal.originalPrice} ETB</span>
+          </div>
+          <span class="deal-discount">${discountText}</span>
+        </div>
+        <p class="deal-expiry">
+          <i class="fas fa-clock"></i> ${deal.expiry}
+        </p>
+        <div class="deal-actions">
+          <button class="deal-btn deal-btn-primary">
+            <i class="fas fa-cart-plus"></i> Add to Cart
+          </button>
+          <button class="deal-btn deal-btn-secondary">
+            <i class="fas fa-exchange-alt"></i> Compare
+          </button>
+        </div>
+      </div>
+    `;
+
+    // Add click event for Add to Cart button
+    const addToCartBtn = card.querySelector('.deal-btn-primary');
+    addToCartBtn.addEventListener('click', () => addToCart(deal));
+
+    return card;
+  }
+
+  // Add to cart functionality
+  function addToCart(deal) {
+    // Create notification element
+    const notification = document.createElement('div');
+    notification.className = 'cart-notification';
+    notification.innerHTML = `
+      <i class="fas fa-check-circle"></i>
+      Added to cart: ${deal.title} - ${deal.price} ETB
+    `;
+    
+    // Style the notification
+    notification.style.position = 'fixed';
+    notification.style.bottom = '20px';
+    notification.style.right = '20px';
+    notification.style.backgroundColor = 'var(--primary)';
+    notification.style.color = 'white';
+    notification.style.padding = '12px 24px';
+    notification.style.borderRadius = '8px';
+    notification.style.boxShadow = '0 4px 12px rgba(0,0,0,0.15)';
+    notification.style.zIndex = '1000';
+    notification.style.display = 'flex';
+    notification.style.alignItems = 'center';
+    notification.style.gap = '8px';
+    notification.style.animation = 'slideUp 0.3s ease forwards';
+    
+    // Add to document
+    document.body.appendChild(notification);
+    
+    // Remove after 3 seconds
+    setTimeout(() => {
+      notification.style.animation = 'fadeOut 0.3s ease forwards';
+      setTimeout(() => notification.remove(), 300);
+    }, 3000);
+    
+    // Update cart count
+    const cartCount = document.querySelector('.cart-count');
+    if (cartCount) {
+      const currentCount = parseInt(cartCount.textContent) || 0;
+      cartCount.textContent = currentCount + 1;
+      
+      // Add animation effect
+      cartCount.style.transform = 'scale(1.5)';
+      setTimeout(() => {
+        cartCount.style.transform = 'scale(1)';
+      }, 300);
+    }
+  }
+
+  // Initialize when DOM is loaded
+  document.addEventListener('DOMContentLoaded', init);
+</script>
+</body>
+</html>
